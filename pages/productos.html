@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- FUENTES -->
+    <!-- roboto  font-family: "Roboto", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <!-- Playpen Sans font-family: "Playpen Sans", cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Productos</title>
+</head>
+
+<body>
+    <!-- Fixed-nav  -  version mobile -->
+    <nav class="fixed-menu">
+        <a href="./index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="30" height="30"><path d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z"/></svg>
+        </a>
+        <div>
+            <img src="../img/assets/logov2.png" alt="Logo del menu mobile">
+        </div>
+        <a href="#Search">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="25" height="25"><path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/></svg>
+
+
+        </a>
+    </nav>
+
+
+    <!------------ HEADER ------------>
+    <header>
+        <div class="header-logo-container">
+            <a href="./index.html">
+                <img src="../img/assets/logov1.png" alt="Logo Oro Verde">
+                <p>Oro Verde</p>
+            </a>
+
+                    <!-- nav-buttons -->
+        <div class="nav-buttons">
+            <button class="cart-button">
+                <a href="/"></a>
+                <span></span>
+            </button>
+            <button class="account-button">
+                <a href="/"></a>
+                <span></span>
+                </button>
+        </div>                
+    </div>
+
+    <nav class="navbar navbar-expand-lg color-nav pb-3">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 modifier-list">
+                    <li class="nav-item ">
+                        <a class="nav-link color-nav-text " aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown color-nav-text">
+                        <a class="nav-link dropdown-toggle color-nav-text" href="./productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Productos
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item modify-letra" href="#">Destacados</a></li>
+                            <li><a class="dropdown-item modify-letra" href="#">Novedades</a></li>
+                            <li><a class="dropdown-item modify-letra" href="#">Promociones</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item modify-letra" href="./productos.html">Todos los productos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-nav-text" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link color-nav-text" href="./sobreNosotros.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item color-nav-text">
+                        <a class="nav-link color-nav-text" href="./carrito.html">Carrito</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex form-modify" role="search">
+                    <input class="form-control me-2 width-input" type="search" placeholder="Buscar" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    </header>
+
+    <!------------ MAIN ------------>
+    <main>
+        <h1>PRODUCTOS</h1>
+            <!-- sección 2: categorías -->
+        <section class="categories-container">
+            <ul>
+                <li>
+                    <a href="">Promociones</a>
+                </li>
+                <li>
+                    <a href="">Mixes y Semillas</a>
+                </li>
+                <li>
+                    <a href="">Snacks</a>
+                </li>
+                <li>
+                    <a href="">Almacén</a>
+                </li>
+                <li>
+                    <a href="">Aceites y aromáticas</a>
+                </li>
+                <li>
+                    <a href="">Bebidas e infusiones</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- sección 2: productos -->
+        <section class="products-container">
+            <div class="products-list">
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
+                    </div>
+                    <div class="product-main-texto">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-1">
+                        <label for="btn-switch-1" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+
+                    <div>
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+                    </div>
+                    <div class="product-main-texto">
+                        <h3>Mermelada orgánica </h3>
+                        <p><span>$</span>1000</p>
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-2">
+                        <label for="btn-switch-2" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas">
+
+                    </div>
+                    <div class="product-main-text">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>                        
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-3">
+                        <label for="btn-switch-3" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
+
+                    </div>
+                    <div class="product-main-texto">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-4">
+                        <label for="btn-switch-4" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+                    </div>
+                    <div class="product-main-texto">
+                        <h3>Mermelada orgánica </h3>
+                        <p><span>$</span>1000</p>
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-5">
+                        <label for="btn-switch-5" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas">
+                    </div>
+                    <div class="product-main-text">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>                        
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-6">
+                        <label for="btn-switch-6" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
+
+                    </div>
+                    <div class="product-main-text">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>                        
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-7">
+                        <label for="btn-switch-7" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas">
+
+                    </div>
+                    <div class="product-main-texto">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-8">
+                        <label for="btn-switch-8" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+
+                    </div>
+                    <div class="product-main-texto">
+                        <h3>Mermelada orgánica </h3>
+                        <p><span>$</span>1000</p>
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-9">
+                        <label for="btn-switch-9" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas">
+
+                    </div>
+                    <div class="product-main-texto">
+                        <h3>Mermelada orgánica </h3>
+                        <p><span>$</span>1000</p>
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-10">
+                        <label for="btn-switch-10" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
+
+                    </div>
+                    <div class="product-main-text">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>                        
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-11">
+                        <label for="btn-switch-11" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de semillas">
+                    </div>
+                    <div class="product-main-text">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>                        
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-12">
+                        <label for="btn-switch-12" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
+                    </div>
+                    <div class="product-main-texto">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-13">
+                        <label for="btn-switch-13" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+                    </div>
+                    <div class="product-main-texto">
+                        <h3>Mermelada orgánica </h3>
+                        <p><span>$</span>1000</p>
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-14">
+                        <label for="btn-switch-14" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de semillas">
+                    </div>
+                    <div class="product-main-text">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>                        
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-15">
+                        <label for="btn-switch-15" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
+                    </div>
+                    <div class="product-main-text">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>                        
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-16">
+                        <label for="btn-switch-16" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de semillas">
+                    </div>
+                    <div class="product-main-texto">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-17">
+                        <label for="btn-switch-17" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+                    </div>
+                    <div class="product-main-texto">
+                        <h3>Mermelada orgánica </h3>
+                        <p><span>$</span>1000</p>
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-18">
+                        <label for="btn-switch-18" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
+                    </div>
+                    <div class="product-main-text">
+                        <h3>Aceite de oliva </h3>
+                        <p><span>$</span>1000</p>                        
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-19">
+                        <label for="btn-switch-19" class="heart-check">💚</label>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div>
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+                    </div>
+                    <div class="product-main-texto">
+                        <h3>Mermelada orgánica </h3>
+                        <p><span>$</span>1000</p>
+                    </div>
+                    <div class="heart-button">
+                        <input type="checkbox" name="" id="btn-switch-20">
+                        <label for="btn-switch-20" class="heart-check">💚</label>
+                    </div>
+                </div>
+
+            </div>
+            <div class="page-buttons">
+                <ul>
+                    <li>
+                        <a href=""><</a>
+                    </li>
+                    <li>
+                        <a href="">1</a>
+                    </li>
+                    <li>
+                        <a href="">2</a>
+                    </li>
+                    <li>
+                        <a href="">3</a>
+                    </li>
+                    <li>
+                        <a href="">4</a>
+                    </li>
+                    <li>
+                        <a href="">5</a>
+                    </li>
+                    <li>
+                        <a href="">></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+            <!-- Botón carrito -->
+            
+        <div class="fixed-cart-button fixed-button">
+            <a href="./carrito.html">
+                <img src="../img/icono/shopping-cart.png" alt="Ir al Carrito">
+            </a>
+        </div>
+
+    </main>
+
+    <!-------------- FOOTER ------------->
+    <footer>
+        <div class="footer-container">
+            
+        <!-- Logo y nombre -->
+            <div class="footer-container-isologo">
+                <div class="footer-isologo">
+                    <a href="../index.html">
+                        <img src="../img/assets/logov1.png" alt="Logo Oro Verde">
+                        Oro Verde
+                    </a>
+
+                </div>
+                <p>Todos los derechos reservados</p>
+            </div>
+            <!-- dirección y contacto -->
+            <div class="footer-container-contacto">
+                <h3>Contacto</h3>
+                <p>Lorem ipsum dolor 1022 sit <br>(264) - 1234567 / (264) - 12345678 </p>
+
+            </div>
+            <!-- Redes Sociales -->
+            <div class="footer-container-redes">
+                <h3>Redes Sociales</h3>
+                    <ul>
+                        <li><a href=""><img src="../img/icono/instagram_sm.png" alt="Instagram"></a></li>
+                        <li><a href=""><img src="../img/icono/facebook_sm.png" alt="Facebook"></a></li>
+                        <li><a href=""><img src="../img/icono/whatsapp_sm.png" alt="Whatsapp"></a></li>
+                    </ul>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
