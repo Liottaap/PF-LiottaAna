@@ -1,6 +1,16 @@
 @import "./base/base";
 @import "./base/reset";
 @import "./base/typography";
+@import "utilities/mixins";
 
-@import "./layouts/footer";
+@import "./layouts/nav_mobile";
 @import "./layouts/header";
+@import "./layouts/footer";
+
+
+
+// Pages del sitio
+@import "./pages/carrito";
+@import "./pages/sobreNosotros";
+@import "./pages/contacto";
+@import "./pages/productos";

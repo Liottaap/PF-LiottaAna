@@ -30,18 +30,105 @@ li {
   list-style: none;
 }
 
-main {
-  margin: 50px auto;
+:root {
+  --primary-color: #4e7748;
+  --secondary-color: #5D2510;
+  --backg-white: #EDE1D2;
+  --backg-green: #f5f5f5;
+  --light-letter-color: #CBB89D;
+  --dark-letter: #412f26;
 }
 
-main h1 {
-  color: var(--secondary-color);
-  text-align: center;
-  font-size: 4rem;
-  letter-spacing: 0.5rem;
-  margin: 50px auto;
+.fixed-menu {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 8vh;
+  background-color: var(--primary-color);
+  z-index: 10;
+  display: none;
+}
+.fixed-menu div img {
+  width: 60px;
+  height: 60px;
+}
+
+:root {
+  --primary-color: #4e7748;
+  --secondary-color: #5D2510;
+  --backg-white: #EDE1D2;
+  --backg-green: #f5f5f5;
+  --light-letter-color: #CBB89D;
+  --dark-letter: #412f26;
+}
+
+header .header-logo-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: #4e7748;
+  /* nav de bootstrap */
+}
+header .header-logo-container a {
+  display: flex;
+  align-items: center;
   font-family: "Playpen Sans", cursive;
-  font-weight: 800;
+  font-weight: 600;
+  background: -webkit-linear-gradient(90deg, #4e7748 10%, #c7965c 90%);
+}
+header .header-logo-container a img {
+  width: 150px;
+}
+header .header-logo-container a p {
+  font-size: 5rem;
+  color: #fff2eb;
+}
+header .header-logo-container .nav-buttons {
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--primary-color);
+  align-items: center;
+  padding-right: 20px;
+}
+header .header-logo-container .nav-buttons .cart-button {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+header .header-logo-container .nav-buttons .cart-button :hover {
+  transform: scale(1.2);
+}
+header .header-logo-container .nav-buttons .cart-button span {
+  background-image: url("../img/icono/shopping-cart-white_red.png");
+}
+header .header-logo-container .nav-buttons .account-button {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+header .header-logo-container .nav-buttons .account-button :hover {
+  transform: scale(1.2);
+}
+header .header-logo-container .nav-buttons .account-button span {
+  background-image: url("../img/icono/account-manager_red.png");
+}
+header .header-logo-container nav div .form-modify .width-input {
+  width: 30vw;
 }
 
 /*# sourceMappingURL=main.css.map */
