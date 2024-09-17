@@ -244,7 +244,6 @@ main h1 {
     grid-row: 1 / 2;
 }
 .section-2-main-ul-container ul {
-
     margin: 0 auto;
     height: 55px;
     display: flex;
@@ -272,17 +271,40 @@ main h1 {
 
 /* cards container - carrusel */
 .section-2-main-cards-container {
-    display: flex;
-    gap: 10px;
+    grid-row: 2 / 3;
     margin: 50px auto;
-    width: 80%;
+    width: 70%;
+    height: auto;
+
+}
+.nuevo-container, .destacados-container, .promos-container{
+    display: flex;
+    margin-bottom: 50px;
+    gap: 10px;
     overflow-x: auto; 
     scroll-snap-type: x mandatory; 
 }
+/* Oculta todos los contenedores por defecto */
+.nuevo-container,
+.destacados-container,
+.promos-container {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Muestra el contenedor que coincida con el ID clicado (target) */
+.nuevo-container:target,
+.destacados-container:target,
+.promos-container:target {
+    display: flex;
+    opacity: 1;
+}
+
 .card-main {
     flex: 0 0 auto; 
-    width: 250px;
-    height: 350px;
+    width: 200px;
+    height: 300px;
     border-radius: 20px;
     padding: 2px;
     scroll-snap-align: center; 
@@ -322,11 +344,15 @@ main h1 {
     cursor: pointer;
 }
 /* customización de la barrita del carrusel */
-.section-2-main-cards-container::-webkit-scrollbar {
+.nuevo-container::-webkit-scrollbar,
+.destacados-container::-webkit-scrollbar,
+.promos-container::-webkit-scrollbar {
     width: 10px;
     height: 10px;
 }
-.section-2-main-cards-container::-webkit-scrollbar-thumb {
+.nuevo-container::-webkit-scrollbar-thumb,
+.destacados-container::-webkit-scrollbar-thumb,
+.promos-container::-webkit-scrollbar-thumb {
     background-color: var(--primary-color);
     border-radius: 10px;
 }
@@ -858,7 +884,8 @@ th:last-child{
     }
     main .categories-container ul li a{
         font-size: 1.4rem;
-    }   
+    }
+
 }
 
 /*-------------- ESTILOS DE MOBILE ------------------*/

@@ -1,0 +1,19 @@
+{
+  "name": "3-entrega",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liottaap/pre-entrega-3-LiottaAna.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liottaap/pre-entrega-3-LiottaAna/issues"
+  },
+  "homepage": "https://github.com/Liottaap/pre-entrega-3-LiottaAna#readme"
+}
