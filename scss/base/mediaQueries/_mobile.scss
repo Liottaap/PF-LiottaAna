@@ -1,55 +1,5 @@
 /* Media queries */
 
-
-/*-------------- ESTILOS DE TABLET ------------------*/
-/*-------------- ESTILOS DE MOBILE ------------------*/
-@media screen and (max-width: 1000px){
-    main h1 {
-        font-size: 3rem;
-    }
-    /* INDEX */
-    .fixed-menu {
-        display: flex;
-
-    }
-    .header-logo{
-        flex-direction: column;
-        text-align: center;
-    }
-    .header-logo-container a img {
-        width: 130px;
-    }
-    .header-logo-container a p{
-        font-size: 3rem;
-    }
-    /* INDEX - Main */
-    .section-1-top p{
-        font-size: 1.3rem;
-    }
-
-    /* botones wsp y productos */
-    .section-1-bottom a{
-        font-size: 1.5rem;
-    }
-    .fixed-button a img {
-        width: 60px;
-    }
-    main .categories-container ul li{
-        padding: 15px;;
-        width: auto;
-        height: auto;
-    }
-    main .categories-container ul {
-        display: flex;
-        gap: 5px;
-        padding: 5px;
-    }
-    main .categories-container ul li a{
-        font-size: 1.4rem;
-    }
-
-}
-
 /*-------------- ESTILOS DE MOBILE ------------------*/
 /*-------------- ESTILOS DE MOBILE ------------------*/
 @media screen and (max-width: 600px){

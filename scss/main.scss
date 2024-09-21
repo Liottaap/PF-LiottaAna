@@ -1,19 +1,21 @@
+//Utilidades
 @import "./utilities/variables";
 @import "./utilities/extend";
-@import "./base/reset";
 @import "./utilities/mixins";
 
+//Estilos Base
+@import "./base/reset";
 @import "./base/nav_mobile";
 @import "./base/header";
 @import "./base/base";
 @import "./base/footer";
 
-// Pages del sitio
+// Estilos de Pages
 @import "./pages/productos";
 @import "./pages/contacto";
 @import "./pages/sobreNosotros";
 @import "./pages/carrito";
 
-
-@import "./base/mediaQuery_mobile";
-@import "./base/mediaQuery_tablet";
+//Media Queries
+@import "./base/mediaQueries/mobile";
+@import "./base/mediaQueries/tablet";
