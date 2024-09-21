@@ -1,0 +1,70 @@
+/*------------ ESTILOS DE FOOTER -------------*/
+
+footer {
+    background-color: $dark-letter;
+    .footer-container{
+        @include grid(repeat(3,1fr),1fr);
+
+        align-content: center;
+        justify-content: center;
+        .footer-container-isologo{
+            @include flex(space-evenly, center, column);
+
+            .footer-isologo{
+                @include flex(center, center, row);
+
+                margin: 0 auto;
+                a{
+                    color: $light-letter-color;
+                    font-size: 2.5rem;
+                    color: $light-letter-color;
+                    img{
+                        width: 30%;
+                    }
+                }
+            }
+            p{
+                color: $light-letter-color;
+                font-size: 1.6rem;
+                color: $light-letter-color;
+            }
+        }
+        .footer-container-contacto{
+            @include flex(center, center, column);
+
+            text-align: center;
+            h3{
+                color: $light-letter-color;
+                font-size: 2.2rem;
+            }
+            p{
+                color: $light-letter-color;
+                font-size: 1.6rem;
+                color: $light-letter-color;
+            }
+        }
+        .footer-container-redes{
+            @include flex(center, center, column);
+
+            text-align: center;
+            h3{
+                color: $light-letter-color;
+                font-size: 2.2rem;
+            }
+            ul{
+                display: flex;
+                li{
+                    margin-right: 5px;
+                    a{
+                        color: $light-letter-color;
+                        font-size: 1.6rem;
+                        color: $light-letter-color;
+                        img{
+                            @include size(50px,50px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

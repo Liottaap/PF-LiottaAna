@@ -1,12 +1,10 @@
-@import "../utilities/variables";
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body {
-    background-color: var(--backg-white);
+    background-color: $backg-white;
     font-family: "Roboto", sans-serif;
 }
 html{
@@ -19,3 +17,16 @@ li {
     list-style: none;
 }
 
+main {
+    margin: 50px auto;
+}
+
+main h1 {
+    color: $secondary-color;
+    text-align: center;
+    font-size: 4rem;
+    letter-spacing: 0.5rem;
+    margin: 50px auto;
+    font-family: "Playpen Sans", cursive;
+    font-weight: 800;
+}

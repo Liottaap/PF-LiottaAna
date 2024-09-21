@@ -1,0 +1,107 @@
+/*------------ ESTILOS DEL HEADER -------------*/
+header {
+    .header-logo-container {
+        @include grid (40% 60%, 1fr);
+        background-color: #4e7748;
+        a {
+            display: flex;
+            align-items: center;
+            font-family: "Playpen Sans", cursive;
+            font-weight: 600;
+            background: -webkit-linear-gradient(90deg, #4e7748 10%, #c7965c 90%);
+            img {
+                width: 150px;
+            }
+            p {
+                font-size: 5rem;
+                color: #fff2eb;
+            }
+        }
+        .nav-buttons {
+            @include flex(flex-end,center,row);
+            background: transparent;
+            padding-right: 20px;
+        .cart-button {
+            @include size(60px,60px);
+            margin-left: 20px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            background-image: url("../img/icono/shopping-cart-white_red.png");
+            :hover {
+                transform: scale(1.2);
+            }
+            a {}
+        }
+        .account-button {
+            @include size(60px,60px);
+            margin-left: 20px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            background-image: url("../img/icono/account-manager_red.png");
+        }
+        :hover {
+            transform: scale(1.2);
+        }
+        a {}
+    }
+    }
+
+    /* Bootstrap */
+    .color-nav {
+        background-color: $primary-color;
+        div{
+            button{}
+            div{
+                .modifier-list{
+                    li{
+                        margin-right: 16px;
+                        .color-nav-text {
+                            color: $backg-white;
+                            font-size: 1.8rem;
+                            &:hover {
+                                background-color: $secondary-color;
+                                border-radius: 5px;
+                                color: whitesmoke;
+                                transform: scaley(1.1);
+                                transition: .5s;
+                            }
+                            &:active,
+                            &:focus {
+                                color: whitesmoke !important;
+                            }
+                        }
+                        ul{
+                            .modify-letra{
+                                font-size: 1.6rem;
+                                color: $dark-letter;
+                            }
+                        :hover{
+                            background-color: $secondary-color;
+                            color: white;
+                        }
+                        }
+                    }
+                }
+
+                .form-modify{
+                    .width-input{
+                        width: 30vw;
+                        font-size: 1.6rem;
+                    }
+                    :focus{
+                        outline: none;
+                        box-shadow: none;   
+                    }
+                }
+            }
+        }
+    }
+}

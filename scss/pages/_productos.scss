@@ -1,0 +1,115 @@
+/*------------ ESTILOS DE PRODUCTOS -------------*/
+/* ----------- ESTILOS DE PRODUCTOS -------------*/
+
+main {
+    .categories-container{
+        height: 80px;
+        margin-bottom: 50px;
+        ul{
+            @include flex(center,center,row);
+            flex-wrap: wrap;
+            li{
+                padding: 22px;
+                border-right: 3px solid white;
+                background-color: $primary-color;
+                &:hover{
+                    transform: scale(1.1);
+                    background-color: #5D2510;
+                }
+                a{
+                    @include font($backg-white,2rem,500);
+                }
+            }
+        }
+    }
+
+    .products-container{
+        @include grid(1fr, 90% 10%);
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: $backg-green;
+        box-shadow: 6px 6px 20px $secondary-color;
+        .products-list{
+            @include flex(center,center,row);
+            flex-wrap: wrap;
+            grid-row: 1 / 2;
+            .product-main{
+                position: relative;
+                @include size(220px,300px);
+                margin: 10px 22px;
+                padding: 2px;
+                border-radius: 20px;
+                text-align: center;
+                border: 3px solid $primary-color;
+                background-color: #4e7748;
+
+                display: flex;
+                flex-direction: column;
+                div{
+                    img{
+                        width: 100%;
+                        border-radius: 20px 20px 0 0;
+                    }
+                }
+                .product-main-texto{
+                    h3{
+                        @include font($backg-white,2.2rem,500);
+                    }
+                    p{
+                        @include font($backg-white,1.8rem,400);
+                        padding-top: 5px;
+                        span{
+                            @include font($backg-white,2.4rem,500);
+                            padding: 5px 5px 0 0;
+
+                        }
+                    }
+                }
+                .heart-button{
+                    position: absolute;
+                    margin: 10px;
+                    top: 0;
+                    right: 0;
+                    input{
+                        display: none;
+                        &:checked + .heart-check{
+                            transform: scale(1.5);
+                        }
+                    }
+                    .heart-check{
+                        font-size: 3rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .page-buttons{
+            grid-row: 2 / 3;
+            ul{
+                @include flex(center,center,row);
+                margin: 50px;
+
+                li{
+                    margin: 1%;
+                    a{
+                        @include font(#453b3b,2rem,400);
+                    }
+                }
+            }
+        }
+    }
+    .fixed-cart-button{
+        @extend %fixed-buttons;
+        border-radius: 50%;
+        background-color: #69cf69;
+        border: 5px solid black;
+        box-shadow: 3px 8px 10px var(--dark-letter); 
+        a{
+            img{
+                width: 100px;
+            }
+        }
+    }
+}

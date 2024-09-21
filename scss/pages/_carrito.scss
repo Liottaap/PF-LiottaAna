@@ -1,0 +1,105 @@
+/*------------ ESTILOS DEL CARRITO -------------*/
+/* ----------- ESTILOS DEL CARRITO -------------*/
+
+main {
+    .carrito{
+        @include size (90%,auto);
+        margin: 50px auto;
+        .first-table{
+            width: 100%;
+            border-collapse: collapse;
+            background-color: $backg-green;
+            tr{
+                th{
+                    @include font($primary-color, 2.2rem, 400);
+                    text-align: left;
+                    padding: 5px;
+                    
+                    background-color: $primary-color;
+                    &:first-child{
+                    padding-left: 3rem;
+                    }
+                    &:last-child{
+                    text-align: right;
+                    padding-right: 3rem;
+                    }
+                }
+            }
+            tr{
+                td{
+                    padding: 10px;
+                    font-size: 2.2rem;
+                    font-weight: 600;
+                    
+                    .cart-info{
+                        display: flex;
+                        flex-wrap: wrap;
+                        img{
+                            @include size(90px,80px);
+                            margin-right: 10px;
+                        }
+                        div{
+                            h3{
+                                @include font(#1e1b1b,2.2rem,600);
+
+                            }
+                            a{
+                                @include font(#951c1c,1.2rem,500);
+                                display: inline-block;
+                                padding-top: 5px;
+                            }
+                        }
+                    }
+                    input{
+                        @include size(40px,30px);
+                        font-size: 1.2rem;
+                        padding: 5px;
+                    }
+                    &:nth-child(3){
+                        font-weight: 500;
+                        text-align: right;
+                        color: #1e1b1b;
+                    }
+                    
+                }
+
+            }
+        }
+
+        .total-price{
+            @include flex(flex-end,center,column);
+            width: 40%;
+            margin-left: 60%;
+            border-top: 3px solid $primary-color;
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                background-color: $backg-green;
+                tr{
+                    @include flex(space-between,center,row);
+                    td{
+                        padding: 10px;
+                        font-size: 2.2rem;
+                        font-weight: 500;
+
+                    }
+
+                }
+            }
+            .pay-button-container{
+                @include flex(center,center,row);
+                width: 100%;
+                margin-top: 40px;
+
+                :hover{
+                        transform: scale(1.1);
+                    }
+                .pay-button{
+                    @extend %estilos-botones;
+                }
+
+            }
+        }
+
+    }
+}

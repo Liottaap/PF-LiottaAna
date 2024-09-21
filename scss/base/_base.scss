@@ -1,0 +1,198 @@
+/*------------ ESTILOS DE INDEX -------------*/
+
+.main-container-index {
+    .section-1-main {
+        width: 90%;
+        @include grid(45% 55%, 80% 20%);
+
+        margin: 0 auto;
+        border: 3px solid $secondary-color;
+        background-color: white;
+        object-fit: cover;
+        .section-1-top {
+            grid-column: 1 / 2;
+            align-self: center;
+            p {
+                color: $dark-letter;
+                font-size: 1.8rem;
+                padding: 0 20px;
+            }
+        }
+        .section-1-top-img {
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+            overflow: hidden;
+            img {
+                @include size(100%, 100%);
+                object-fit: cover;
+
+            }
+        }
+
+        .section-1-bottom-left {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            align-content: center;
+            background-color: $dark-letter;
+            a {
+                color: white;
+                font-size: 1.8rem;
+                @include flex(space-evenly, center, row);
+
+                img {
+                width: 13%;
+                }
+            }
+        }
+
+        .section-1-bottom-right {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            align-content: center;
+            background-color: $dark-letter;
+            a {
+                color: white;
+                font-size: 1.8rem;
+                
+                @include flex(space-evenly, center, row);
+                img {
+                width: 40%;
+                }
+            }
+        }
+    }
+
+    .section-2-main {
+        @include grid(15% 70% 15%, 1fr);
+        row-gap: 30px;
+        .section-2-main-ul-container {
+            grid-column: 1 / 4;
+            grid-row: 1 / 2;
+            ul {
+                display: flex;
+                gap: 10px;    
+                padding: 0;
+                height: 55px;
+                @include flex(center,center,row);
+                margin: 0 auto;
+                li {
+                    padding: 15px 30px;
+                    border-radius: 10px;
+                    background-color: $primary-color;
+
+                    @include flex(center,center,row);
+                    &:hover {
+                    transform: scaley(1.1);
+                    background-color: $secondary-color;
+                    }
+                    a {
+                        color: white;
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+
+        .section-2-main-cards-container {
+            grid-row: 2 / 3;
+            grid-column: 1 / 4;
+            margin: 0 auto;
+            @include size(70%,auto);
+                .nuevo-container,
+                .destacados-container,
+                .promos-container {
+                    display: flex;
+                    height: 45vh;
+                    margin-bottom: 50px;
+                    gap: 10px;
+                    overflow-x: auto;
+                    scroll-snap-type: x mandatory;
+
+                    // Ocultar todos los contenedores por defecto
+                    display: none;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+
+                    &:target {
+                    display: flex;
+                    opacity: 1;
+                    }
+
+                    .card-main {
+                        flex: 0 0 auto;
+                        @include size(200px, 300px);
+                        border-radius: 20px;
+                        padding: 2px;
+                        scroll-snap-align: center;
+
+                        &:nth-child(2n) {
+                            background-color: $secondary-color;
+                            border: 3px solid $secondary-color;
+                        }
+
+                        &:nth-child(2n + 1) {
+                            background-color: $primary-color;
+                            border: 3px solid $primary-color;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        img {
+                            @include size(100%, 70%);
+                            object-fit: contain;
+                            border-radius: 20px 20px 0 0;
+                        }
+
+                        .card-main-text {
+                            @include flex(space-evenly, center, column);
+                            height: 30%;
+
+                            h3 {
+                                @include font(whitesmoke, 2.2rem, 600);
+                            }
+
+                            p {
+                                @include font(whitesmoke, 2rem, 500);
+                            }
+                        }
+                    }
+            
+
+        // Custom scrollbar
+        &::-webkit-scrollbar {
+            @include size(10px, 10px);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $primary-color;
+            border-radius: 10px;
+        }
+            }
+            .ver-mas-button{
+            
+                @extend %estilos-botones;
+                align-self: center;
+                grid-row: 3 / 4;
+                margin: 0 auto;
+                &:hover {
+                transform: scale(1.1);
+                }
+                
+
+            }                
+
+        }
+    }
+
+    .fixed-wsp-button {
+        @extend %fixed-buttons;
+        a {
+            img {
+                background-color: none;
+                width: 100px;
+            }
+        }
+    }
+}

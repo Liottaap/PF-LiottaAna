@@ -1,16 +1,19 @@
-@import "./base/base";
+@import "./utilities/variables";
+@import "./utilities/extend";
 @import "./base/reset";
-@import "./base/typography";
-@import "utilities/mixins";
+@import "./utilities/mixins";
 
-@import "./layouts/nav_mobile";
-@import "./layouts/header";
-@import "./layouts/footer";
-
-
+@import "./base/nav_mobile";
+@import "./base/header";
+@import "./base/base";
+@import "./base/footer";
 
 // Pages del sitio
-@import "./pages/carrito";
-@import "./pages/sobreNosotros";
-@import "./pages/contacto";
 @import "./pages/productos";
+@import "./pages/contacto";
+@import "./pages/sobreNosotros";
+@import "./pages/carrito";
+
+
+@import "./base/mediaQuery_mobile";
+@import "./base/mediaQuery_tablet";
