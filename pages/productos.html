@@ -39,7 +39,7 @@
     <!------------ HEADER ------------>
     <header>
         <div class="header-logo-container">
-            <a href="./index.html">
+            <a href="../index.html">
                 <img src="../img/assets/logov1.png" alt="Logo Oro Verde">
                 <p>Oro Verde</p>
             </a>
@@ -58,7 +58,7 @@
     </div>
 
     <nav class="navbar navbar-expand-lg color-nav pb-3">
-        <div class="container-fluid">
+        <div class="container-fluid flex-row">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -88,12 +88,12 @@
                     <li class="nav-item color-nav-text">
                         <a class="nav-link color-nav-text" href="./carrito.html">Carrito</a>
                     </li>
-
                 </ul>
-                <form class="d-flex form-modify" role="search">
-                    <input class="form-control me-2 width-input" type="search" placeholder="Buscar" aria-label="Search">
-                </form>
+            
             </div>
+            <form class="d-flex" role="search" id="Search">
+                <input class="form-control me-2 width-input" type="search" placeholder="Buscar" aria-label="Search">
+            </form>
         </div>
     </nav>
 
@@ -378,19 +378,14 @@
 
     <!-------------- FOOTER ------------->
     <footer>
-        <div class="footer-container">
-            
         <!-- Logo y nombre -->
-            <div class="footer-container-isologo">
-                <div class="footer-isologo">
-                    <a href="../index.html">
-                        <img src="../img/assets/logov1.png" alt="Logo Oro Verde">
-                        Oro Verde
-                    </a>
-
-                </div>
-                <p>Todos los derechos reservados</p>
-            </div>
+        <div class="footer-container-isologo">
+            <a href="../index.html">
+                <img src="../img/assets/logov1.png" alt="Logo Oro Verde">
+                Oro Verde
+            </a>
+            <p>Todos los derechos reservados</p>
+        </div>
             <!-- dirección y contacto -->
             <div class="footer-container-contacto">
                 <h3>Contacto</h3>

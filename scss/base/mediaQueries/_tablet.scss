@@ -1,0 +1,81 @@
+
+/*-------------- ESTILOS DE TABLET ------------------*/
+/*-------------- ESTILOS DE TABLET ------------------*/
+@media screen and (max-width: 1024px){
+    main h1 {
+        font-size: 3rem;
+    }
+    /* -------BASE-------- */
+    /* -------BASE-------- */
+    .fixed-menu {
+        display: flex;
+
+    }
+    .header-logo{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-logo-container a img {
+        width: 130px;
+    }
+    .header-logo-container a p{
+        font-size: 3rem;
+    }
+    /* BASE - Main */
+    .main-container-index .section-1-main .section-1-top p{
+        font-size: 1.6rem;
+    }
+    .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a,
+    .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a{
+        font-size: 2rem;
+    }
+
+    /* botones wsp */
+    .section-1-bottom a{
+        font-size: 1.5rem;
+    }
+    .fixed-button a img {
+        width: 60px;
+    }
+
+    /* -------PRODUCTOS-------- */
+    /* -------PRODUCTOS-------- */
+    main .categories-container ul li{
+        padding: 15px;;
+        width: auto;
+        height: auto;
+    }
+    main .categories-container ul {
+        display: flex;
+        gap: 5px;
+        padding: 5px;
+    }
+    main .categories-container ul li a{
+        font-size: 1.4rem;
+    }
+    .main-container-index .section-2-main .section-2-main-cards-container .nuevo-container,
+    .main-container-index .section-2-main .section-2-main-cards-container .destacados-container,
+    .main-container-index .section-2-main .section-2-main-cards-container .promos-container {
+    height: 80%;
+    }
+
+
+
+
+
+
+    /* FOOTER */
+
+    footer .footer-container-isologo a{
+        font-size: 2.4rem;
+        justify-content: space-between;
+        width: 50%;
+    }
+    footer .footer-container-isologo a img {
+    width: 50%;
+    }
+    footer .footer-container-contacto p,
+    footer .footer-container-redes p{
+        font-size: 1.4rem;
+    }
+}

@@ -11,7 +11,7 @@ main {
             background-color: $backg-green;
             tr{
                 th{
-                    @include font($primary-color, 2.2rem, 400);
+                    @include font(whitesmoke, 2.2rem, 500);
                     text-align: left;
                     padding: 5px;
                     
@@ -91,7 +91,7 @@ main {
                 width: 100%;
                 margin-top: 40px;
 
-                :hover{
+                &:hover{
                         transform: scale(1.1);
                     }
                 .pay-button{

@@ -1,77 +1,132 @@
-/* Media queries */
 
 /*-------------- ESTILOS DE MOBILE ------------------*/
 /*-------------- ESTILOS DE MOBILE ------------------*/
-@media screen and (max-width: 600px){
-    /* INDEX */
+@media screen and (max-width: 768px){
+    /* ---------INDEX ----------*/
     .fixed-menu {
         display: flex;
     }
-
+    .header-logo-container a{
+        justify-content: center;
+    }
+    header .header-logo-container a img {
+        width: 100px;
+    }
     .header-logo-container a p{
         display: none;
     }
-    /* INDEX - Main */
-        
-    .section-1-main {
+    /*  Main */
+    .section-1-top {
+        @include flex(center,center,row);
+        position: relative;
+    }
+    .main-container-index .section-1-main .section-1-top img {
+        width: 100%;
+        height: 100%;
+
+    
+    }
+    .main-container-index .section-1-main .section-1-top p{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        padding: 10px;
+        color: #1b1614;
+        background-color: rgb(145 118 118 / 50%);
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+
+    }
+    .main-container-index .section-1-main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 70% repeat(2,15% 15%);
+
+    }
+
+    .main-container-index .section-1-main .section-1-bottom{
+        grid-row: 2 / 4;
+        grid-column: 1 / 3;
         display: flex;
         flex-direction: column;
-        gap: 5px;
+
     }
-    .section-1-bottom a{
+    .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left,
+    .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right{
+        width: 100%;
+        height: 100%;
+    }
+    .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a,
+    .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a{
         font-size: 1.5rem;
-        text-align: center;
+
     }
-    .section-2-main-ul-container ul {
-        width: 60%;
-        height: 55px;
-        justify-content: center;
-        margin: 0 auto;
+    
+    .main-container-index .section-2-main .section-2-main-ul-container ul {
+        gap: 2px;
     }
-    .section-2-main-ul-container ul li{
+    .main-container-index .section-2-main .section-2-main-ul-container ul li {
         font-size: 1.4rem;
-        padding: 3px;
+        padding:5px;
     }
+
+
 
     .card-main{ 
         width: 100%;
         max-width: 200px;
     }
 
-    .button-class {
-        font-size: 1.3rem;
+
+    /* VER-MAS BUTTON */
+    .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button a{
+        font-size: 1.8rem
     }
-    .fixed-button a img {
-        width: 50px;
-    }
+
     /* FOOTER */
-    .footer {
-        padding-bottom: 100px;
+
+    footer{
+        @include grid(1fr, repeat(3,1fr));
+        height: 60vh;
     }
-    .footer-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .footer-container-isologo {
-        grid-row: 1;
+
+    footer .footer-container-isologo {
+        grid-row: 3;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: auto;
+        border-right: none;
+        border-bottom: 3px solid $light-letter-color;
+    }
+    footer .footer-container-isologo a{
+        font-size: 4rem;
+        font-weight: 500;
+        justify-content: center;
+        border-top: 3px solid $light-letter-color;
+        width: 100%;
+    }
+    footer .footer-container-isologo a img{
+        width: 20%;
     }
     .footer-container-contacto {
-        grid-row: 2;
+        grid-row: 1;
+    }
+    footer .footer-container-contacto ,
+    footer .footer-container-redes {
+        padding-top: 0;
+        justify-content: center;
+    }
+    footer .footer-container-contacto p,
+    footer .footer-container-redes p{
+        font-size: 1.4rem;
     }
     .footer-container-redes {
-        grid-row: 3;
+        grid-row: 2;
         justify-content: flex-start;
-        padding-bottom: 100px;
+
     }
-    .footer-isologo a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    /* Boton carrito */
+
+    /* Botón carrito */
     .fixed-button {
         position: fixed;
         right: 5px;

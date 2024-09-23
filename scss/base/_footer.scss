@@ -1,70 +1,68 @@
 /*------------ ESTILOS DE FOOTER -------------*/
 
 footer {
+    margin-bottom: 8vh;
     background-color: $dark-letter;
-    .footer-container{
-        @include grid(repeat(3,1fr),1fr);
+    @include grid(repeat(3,1fr),1fr);
 
-        align-content: center;
-        justify-content: center;
-        .footer-container-isologo{
-            @include flex(space-evenly, center, column);
-
-            .footer-isologo{
-                @include flex(center, center, row);
-
-                margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    .footer-container-isologo{
+        @include flex(space-evenly, flex-start, column);
+        margin: 0 auto;
+        border-right: 3px solid $light-letter-color;
+        a{
+            @include font($light-letter-color,3rem,600);
+            @include flex(flex-start,center,row);
+            font-family: "Playpen Sans", cursive;
+            img{
+                width: 30%;
+                padding-right: 5px;
+            }
+        }
+        }
+        p{
+            color: $light-letter-color;
+            font-size: 1.4rem;
+        }
+    }
+    .footer-container-contacto{
+        @include flex(flex-start, center, column);
+        text-align: center;
+        height: 100%;
+        padding-top: 10%;
+        h3{
+            color: $light-letter-color;
+            font-size: 2.2rem;
+            border-bottom: 1px solid $light-letter-color;
+        }
+        p{
+            color: $light-letter-color;
+            font-size: 1.6rem;
+        }
+    }
+    .footer-container-redes{
+        @include flex(flex-start, center, column);
+        text-align: center;
+        height: 100%;
+        padding-top: 10%;
+        h3{
+            color: $light-letter-color;
+            font-size: 2.2rem;
+            border-bottom: 1px solid $light-letter-color;
+        }
+        ul{
+            display: flex;
+            li{
+                margin-right: 5px;
                 a{
                     color: $light-letter-color;
-                    font-size: 2.5rem;
-                    color: $light-letter-color;
+
                     img{
-                        width: 30%;
-                    }
-                }
-            }
-            p{
-                color: $light-letter-color;
-                font-size: 1.6rem;
-                color: $light-letter-color;
-            }
-        }
-        .footer-container-contacto{
-            @include flex(center, center, column);
-
-            text-align: center;
-            h3{
-                color: $light-letter-color;
-                font-size: 2.2rem;
-            }
-            p{
-                color: $light-letter-color;
-                font-size: 1.6rem;
-                color: $light-letter-color;
-            }
-        }
-        .footer-container-redes{
-            @include flex(center, center, column);
-
-            text-align: center;
-            h3{
-                color: $light-letter-color;
-                font-size: 2.2rem;
-            }
-            ul{
-                display: flex;
-                li{
-                    margin-right: 5px;
-                    a{
-                        color: $light-letter-color;
-                        font-size: 1.6rem;
-                        color: $light-letter-color;
-                        img{
-                            @include size(50px,50px);
-                        }
+                        @include size(45px,45px);
                     }
                 }
             }
         }
     }
-}
+

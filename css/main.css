@@ -3,17 +3,19 @@ main .carrito .total-price .pay-button-container .pay-button, .main-container-in
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: 30%;
   padding: 3px;
   margin: 0 auto;
   height: 50px;
-  background-color: #4e7748;
+  background-color: transparent;
   border-radius: 10px;
-  border: 3px outset #412f26;
+  box-shadow: 5px 5px 4px #4e7748;
+  border: 4px solid #4e7748;
 }
 main .carrito .total-price .pay-button-container .pay-button a, .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button a {
   font-size: 2.5rem;
-  color: whitesmoke;
+  font-weight: 500;
+  color: #412f26;
   padding: 3px;
 }
 
@@ -69,13 +71,17 @@ main h1 {
   bottom: 0;
   width: 100%;
   height: 8vh;
+  border-top: 3px solid #ddb3a1;
   background-color: #4e7748;
   z-index: 10;
   display: none;
 }
 .fixed-menu div img {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
+}
+.fixed-menu .menu-svg {
+  fill: #faf9e8;
 }
 
 /*------------ ESTILOS DEL HEADER -------------*/
@@ -143,6 +149,17 @@ header .header-logo-container .nav-buttons :hover {
 header .color-nav {
   background-color: #4e7748;
 }
+header .color-nav div form {
+  height: 5vh;
+}
+header .color-nav div form .width-input {
+  width: 30vw;
+  font-size: 1.6rem;
+}
+header .color-nav div form :focus {
+  outline: none;
+  box-shadow: none;
+}
 header .color-nav div div .modifier-list li {
   margin-right: 16px;
 }
@@ -168,78 +185,108 @@ header .color-nav div div .modifier-list li ul :hover {
   background-color: #5D2510;
   color: white;
 }
-header .color-nav div div .form-modify .width-input {
-  width: 30vw;
-  font-size: 1.6rem;
-}
-header .color-nav div div .form-modify :focus {
-  outline: none;
-  box-shadow: none;
-}
 
 /*------------ ESTILOS DE INDEX -------------*/
 .main-container-index .section-1-main {
   width: 90%;
+  height: 60vh;
   display: grid;
-  grid-template-columns: 45% 55%;
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 80% 20%;
+  row-gap: 10px;
   margin: 0 auto;
-  border: 3px solid #5D2510;
-  background-color: white;
+  text-align: center;
   object-fit: cover;
 }
 .main-container-index .section-1-main .section-1-top {
-  grid-column: 1/2;
-  align-self: center;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  border: 3px solid #5D2510;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .main-container-index .section-1-main .section-1-top p {
+  width: 50%;
+  justify-self: flex-start;
   color: #412f26;
   font-size: 1.8rem;
+  font-weight: 500;
   padding: 0 20px;
 }
-.main-container-index .section-1-main .section-1-top-img {
-  grid-column: 2/3;
-  grid-row: 1/3;
-  overflow: hidden;
-}
-.main-container-index .section-1-main .section-1-top-img img {
-  width: 100%;
+.main-container-index .section-1-main .section-1-top img {
+  justify-self: flex-end;
+  width: 50%;
   height: 100%;
   object-fit: cover;
 }
-.main-container-index .section-1-main .section-1-bottom-left {
-  grid-column: 2/3;
+.main-container-index .section-1-main .section-1-bottom {
+  grid-column: 1/3;
   grid-row: 2/3;
-  align-content: center;
-  background-color: #412f26;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
 }
-.main-container-index .section-1-main .section-1-bottom-left a {
-  color: white;
-  font-size: 1.8rem;
+.main-container-index .section-1-main .section-1-bottom .section-1-bottom-right {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-}
-.main-container-index .section-1-main .section-1-bottom-left a img {
-  width: 13%;
-}
-.main-container-index .section-1-main .section-1-bottom-right {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  align-content: center;
+  width: 50%;
+  height: 100%;
   background-color: #412f26;
 }
-.main-container-index .section-1-main .section-1-bottom-right a {
-  color: white;
-  font-size: 1.8rem;
+.main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
+  color: black;
+  font-size: 2.6rem;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 10px rgb(93, 37, 16);
+  text-shadow: 2px 2px rgb(255, 255, 255);
+  background-image: url("../../img/assets/banner_instagram.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*                 img {
+                  width: 15%;
+                  } */
 }
-.main-container-index .section-1-main .section-1-bottom-right a img {
-  width: 40%;
+.main-container-index .section-1-main .section-1-bottom .section-1-bottom-left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+}
+.main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: black;
+  font-size: 2.6rem;
+  font-weight: 500;
+  text-shadow: 2px 2px rgb(255, 255, 255);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 10px rgb(93, 37, 16);
+  background-image: url("../../img/assets/medios_de_pago.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .main-container-index .section-2-main {
   display: grid;
@@ -290,7 +337,7 @@ header .color-nav div div .form-modify :focus {
 .main-container-index .section-2-main .section-2-main-cards-container .destacados-container,
 .main-container-index .section-2-main .section-2-main-cards-container .promos-container {
   display: flex;
-  height: 45vh;
+  height: 50vh;
   margin-bottom: 50px;
   gap: 10px;
   overflow-x: auto;
@@ -314,6 +361,7 @@ header .color-nav div div .form-modify :focus {
   border-radius: 20px;
   padding: 2px;
   scroll-snap-align: center;
+  text-align: center;
 }
 .main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main:nth-child(2n),
 .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main:nth-child(2n),
@@ -336,9 +384,10 @@ header .color-nav div div .form-modify :focus {
 .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main img,
 .main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main img {
   width: 100%;
-  height: 70%;
+  height: auto;
   object-fit: contain;
   border-radius: 20px 20px 0 0;
+  padding: 2px;
 }
 .main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main .card-main-text,
 .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main .card-main-text,
@@ -377,6 +426,7 @@ header .color-nav div div .form-modify :focus {
 }
 .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button {
   align-self: center;
+  text-align: center;
   grid-row: 3/4;
   margin: 0 auto;
 }
@@ -390,82 +440,86 @@ header .color-nav div div .form-modify :focus {
 
 /*------------ ESTILOS DE FOOTER -------------*/
 footer {
+  margin-bottom: 8vh;
   background-color: #412f26;
-}
-footer .footer-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
   align-content: center;
   justify-content: center;
 }
-footer .footer-container .footer-container-isologo {
+footer .footer-container-isologo {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
+  margin: 0 auto;
+  border-right: 3px solid #CBB89D;
 }
-footer .footer-container .footer-container-isologo .footer-isologo {
+footer .footer-container-isologo a {
+  color: #CBB89D;
+  font-size: 3rem;
+  font-weight: 600;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: row;
-  margin: 0 auto;
+  font-family: "Playpen Sans", cursive;
 }
-footer .footer-container .footer-container-isologo .footer-isologo a {
-  color: #CBB89D;
-  font-size: 2.5rem;
-  color: #CBB89D;
-}
-footer .footer-container .footer-container-isologo .footer-isologo a img {
+footer .footer-container-isologo a img {
   width: 30%;
+  padding-right: 5px;
 }
-footer .footer-container .footer-container-isologo p {
+footer p {
   color: #CBB89D;
-  font-size: 1.6rem;
-  color: #CBB89D;
+  font-size: 1.4rem;
 }
-footer .footer-container .footer-container-contacto {
+
+.footer-container-contacto {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  height: 100%;
+  padding-top: 10%;
 }
-footer .footer-container .footer-container-contacto h3 {
+.footer-container-contacto h3 {
   color: #CBB89D;
   font-size: 2.2rem;
+  border-bottom: 1px solid #CBB89D;
 }
-footer .footer-container .footer-container-contacto p {
+.footer-container-contacto p {
   color: #CBB89D;
   font-size: 1.6rem;
-  color: #CBB89D;
 }
-footer .footer-container .footer-container-redes {
+
+.footer-container-redes {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  height: 100%;
+  padding-top: 10%;
 }
-footer .footer-container .footer-container-redes h3 {
+.footer-container-redes h3 {
   color: #CBB89D;
   font-size: 2.2rem;
+  border-bottom: 1px solid #CBB89D;
 }
-footer .footer-container .footer-container-redes ul {
+.footer-container-redes ul {
   display: flex;
 }
-footer .footer-container .footer-container-redes ul li {
+.footer-container-redes ul li {
   margin-right: 5px;
 }
-footer .footer-container .footer-container-redes ul li a {
-  color: #CBB89D;
-  font-size: 1.6rem;
+.footer-container-redes ul li a {
   color: #CBB89D;
 }
-footer .footer-container .footer-container-redes ul li a img {
-  width: 50px;
-  height: 50px;
+.footer-container-redes ul li a img {
+  width: 45px;
+  height: 45px;
 }
 
 /*------------ ESTILOS DE PRODUCTOS -------------*/
@@ -745,9 +799,9 @@ main .carrito .first-table {
   background-color: #f5f5f5;
 }
 main .carrito .first-table tr th {
-  color: #4e7748;
+  color: whitesmoke;
   font-size: 2.2rem;
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
   padding: 5px;
   background-color: #4e7748;
@@ -829,17 +883,17 @@ main .carrito .total-price .pay-button-container {
   width: 100%;
   margin-top: 40px;
 }
-main .carrito .total-price .pay-button-container :hover {
+main .carrito .total-price .pay-button-container:hover {
   transform: scale(1.1);
 }
-/* Media queries */
 /*-------------- ESTILOS DE TABLET ------------------*/
-/*-------------- ESTILOS DE MOBILE ------------------*/
-@media screen and (max-width: 1000px) {
+/*-------------- ESTILOS DE TABLET ------------------*/
+@media screen and (max-width: 1024px) {
   main h1 {
     font-size: 3rem;
   }
-  /* INDEX */
+  /* -------BASE-------- */
+  /* -------BASE-------- */
   .fixed-menu {
     display: flex;
   }
@@ -853,17 +907,23 @@ main .carrito .total-price .pay-button-container :hover {
   .header-logo-container a p {
     font-size: 3rem;
   }
-  /* INDEX - Main */
-  .section-1-top p {
-    font-size: 1.3rem;
+  /* BASE - Main */
+  .main-container-index .section-1-main .section-1-top p {
+    font-size: 1.6rem;
   }
-  /* botones wsp y productos */
+  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a,
+  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a {
+    font-size: 2rem;
+  }
+  /* botones wsp */
   .section-1-bottom a {
     font-size: 1.5rem;
   }
   .fixed-button a img {
     width: 60px;
   }
+  /* -------PRODUCTOS-------- */
+  /* -------PRODUCTOS-------- */
   main .categories-container ul li {
     padding: 15px;
     width: auto;
@@ -877,75 +937,140 @@ main .carrito .total-price .pay-button-container :hover {
   main .categories-container ul li a {
     font-size: 1.4rem;
   }
+  .main-container-index .section-2-main .section-2-main-cards-container .nuevo-container,
+  .main-container-index .section-2-main .section-2-main-cards-container .destacados-container,
+  .main-container-index .section-2-main .section-2-main-cards-container .promos-container {
+    height: 80%;
+  }
+  /* FOOTER */
+  footer .footer-container-isologo a {
+    font-size: 2.4rem;
+    justify-content: space-between;
+    width: 50%;
+  }
+  footer .footer-container-isologo a img {
+    width: 50%;
+  }
+  footer .footer-container-contacto p,
+  footer .footer-container-redes p {
+    font-size: 1.4rem;
+  }
 }
 /*-------------- ESTILOS DE MOBILE ------------------*/
 /*-------------- ESTILOS DE MOBILE ------------------*/
-@media screen and (max-width: 600px) {
-  /* INDEX */
+@media screen and (max-width: 768px) {
+  /* ---------INDEX ----------*/
   .fixed-menu {
     display: flex;
+  }
+  .header-logo-container a {
+    justify-content: center;
+  }
+  header .header-logo-container a img {
+    width: 100px;
   }
   .header-logo-container a p {
     display: none;
   }
-  /* INDEX - Main */
-  .section-1-main {
+  /*  Main */
+  .section-1-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+  }
+  .main-container-index .section-1-main .section-1-top img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container-index .section-1-main .section-1-top p {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    padding: 10px;
+    color: #1b1614;
+    background-color: rgba(145, 118, 118, 0.5);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  }
+  .main-container-index .section-1-main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 70% repeat(2, 15% 15%);
+  }
+  .main-container-index .section-1-main .section-1-bottom {
+    grid-row: 2/4;
+    grid-column: 1/3;
     display: flex;
     flex-direction: column;
-    gap: 5px;
   }
-  .section-1-bottom a {
+  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left,
+  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a,
+  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a {
     font-size: 1.5rem;
-    text-align: center;
   }
-  .section-2-main-ul-container ul {
-    width: 60%;
-    height: 55px;
-    justify-content: center;
-    margin: 0 auto;
+  .main-container-index .section-2-main .section-2-main-ul-container ul {
+    gap: 2px;
   }
-  .section-2-main-ul-container ul li {
+  .main-container-index .section-2-main .section-2-main-ul-container ul li {
     font-size: 1.4rem;
-    padding: 3px;
+    padding: 5px;
   }
   .card-main {
     width: 100%;
     max-width: 200px;
   }
-  .button-class {
-    font-size: 1.3rem;
-  }
-  .fixed-button a img {
-    width: 50px;
+  /* VER-MAS BUTTON */
+  .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button a {
+    font-size: 1.8rem;
   }
   /* FOOTER */
-  .footer {
-    padding-bottom: 100px;
-  }
-  .footer-container {
+  footer {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    height: 60vh;
   }
-  .footer-container-isologo {
-    grid-row: 1;
+  footer .footer-container-isologo {
+    grid-row: 3;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: auto;
+    border-right: none;
+    border-bottom: 3px solid #CBB89D;
+  }
+  footer .footer-container-isologo a {
+    font-size: 4rem;
+    font-weight: 500;
+    justify-content: center;
+    border-top: 3px solid #CBB89D;
+    width: 100%;
+  }
+  footer .footer-container-isologo a img {
+    width: 20%;
   }
   .footer-container-contacto {
-    grid-row: 2;
+    grid-row: 1;
+  }
+  footer .footer-container-contacto,
+  footer .footer-container-redes {
+    padding-top: 0;
+    justify-content: center;
+  }
+  footer .footer-container-contacto p,
+  footer .footer-container-redes p {
+    font-size: 1.4rem;
   }
   .footer-container-redes {
-    grid-row: 3;
+    grid-row: 2;
     justify-content: flex-start;
-    padding-bottom: 100px;
   }
-  .footer-isologo a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* Boton carrito */
+  /* Botón carrito */
   .fixed-button {
     position: fixed;
     right: 5px;
