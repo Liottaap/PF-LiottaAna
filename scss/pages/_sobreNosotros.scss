@@ -4,62 +4,53 @@
 main{
     .sobre-nosotros{
         @include size(70%,100%);
-        @include grid(repeat(6,1fr),70% 30%);
-        margin: 0 auto;
-        border: 3px solid $secondary-color;
-        box-shadow: 5px 5px 10px $secondary-color;
+        @include grid(1fr,400px 100px);
         background-color: $backg-green;
-        .sobre-nosotros-top-left{
+        box-shadow: 5px 5px 10px $secondary-color;
+        border: 5px solid $secondary-color;
+        margin: 0 auto;
+        text-align: center;
+
+        .sobre-nosotros-top{
             grid-row: 1 / 2;
-            grid-column: 1 / 4;
-            @include flex(center,center,column);
-            margin: 0 10px;
-            font-family: "Roboto", sans-serif;
-            font-size: 1.6rem;
-            span{
+            display: flex;
+            align-items: center;
+            border-bottom: none;
+            justify-content: center;
+
+            p{
+                width: 50%;
+                font-size: 1.6rem;
+                color: $dark-letter;
+                padding: 2px;
+                text-align: center;
+                span{
                 font-weight: 500;
                 font-size: 1.8rem;
+                }
             }
-        }
-        .sobre-nosotros-top-right{
-            grid-row: 1 / 2;
-            grid-column: 4 / 7;
             img{
                 object-fit: cover;
-                width: 100%;
+                width: 50%;
                 height: 100%;
             }
         }
-        .img-sobre-nosotros{
+        .sobre-nosotros-bottom{
+            grid-row: 2 / 3;
             display: flex;
+            border: 3px dotted $secondary-color;
+            justify-content: space-between;
+            align-items: center;
             img{
+                border-right: 3px dotted $secondary-color;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
-                @include size(100%,100%);
-            }
+                cursor: pointer;
+                &:nth-child(6){
+                    border-right: none;
+                } 
+            } 
         }
-        .img-1{
-            grid-row: 2 / 3;
-            grid-column: 1 / 2;
-        }
-        .img-2 {
-            grid-row: 2 / 3;
-            grid-column: 2 / 3;
-        }
-        .img-3 {
-            grid-row: 2 / 3;
-            grid-column: 3 / 4;
-}
-        .img-4 {
-            grid-row: 2 / 3;
-            grid-column: 4 / 5;
-}
-        .img-5 {
-            grid-row: 2 / 3;
-            grid-column: 5 / 6;
-}
-        .img-6 {
-            grid-row: 2 / 3;
-            grid-column: 6 / 7;
-}
     }
 }

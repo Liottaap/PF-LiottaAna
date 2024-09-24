@@ -34,9 +34,6 @@
     .section-1-bottom a{
         font-size: 1.5rem;
     }
-    .fixed-button a img {
-        width: 60px;
-    }
 
     /* -------PRODUCTOS-------- */
     /* -------PRODUCTOS-------- */
@@ -51,7 +48,7 @@
         padding: 5px;
     }
     main .categories-container ul li a{
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
     .main-container-index .section-2-main .section-2-main-cards-container .nuevo-container,
     .main-container-index .section-2-main .section-2-main-cards-container .destacados-container,
@@ -60,12 +57,39 @@
     }
 
 
-
-
+    /* -------SOBRE NOSOTROS-------- */
+    /* -------SOBRE NOSOTROS-------- */
+    main .sobre-nosotros .sobre-nosotros-top{
+        position: relative;
+    }
+    main .sobre-nosotros .sobre-nosotros-top p{
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        font-family: "Roboto", sans-serif;
+        background-color: rgb(145 118 118 / 50%);
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+        top: 20px;
+        text-align: center;
+        padding: 0 30px;
+    }
+    main .sobre-nosotros .sobre-nosotros-top img{
+        width: 100%;
+    }
+    main .sobre-nosotros .sobre-nosotros-bottom img:nth-child(5),
+    main .sobre-nosotros .sobre-nosotros-bottom img:nth-child(6){
+        display: none;
+    }
+    main .sobre-nosotros .sobre-nosotros-bottom img:nth-child(4){
+        border-right: none;
+    }
 
 
     /* FOOTER */
 
+    footer{
+        margin-bottom: 8vh;
+    }
     footer .footer-container-isologo a{
         font-size: 2.4rem;
         justify-content: space-between;

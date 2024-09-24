@@ -4,7 +4,7 @@
 
 main{
     .contacto-container{
-        @include size(50%,200px);
+        @include size(70%,200px);
         @include flex(space-around,center,row);
         margin: 50px auto;
         background-color: $backg-green;
@@ -24,7 +24,7 @@ main{
             }
         }
         .contacto-container--tel{
-            @extend .contacto-container--tel;
+            @extend .contacto-container--text;
             h2{
                 @include font($secondary-color,2.2rem,600);
             }
@@ -49,9 +49,12 @@ main{
             @include font($secondary-color,3.8rem,700);
             letter-spacing: 0.5rem;
             margin-bottom: 20px;
+            text-align: center;
             font-family: "Playpen Sans", cursive;
         }
-        iframe{}
+        iframe{
+            width: 90%;
+        }
         
     }
     .fixed-wsp-button {

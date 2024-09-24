@@ -58,11 +58,14 @@ header {
     .color-nav {
         background-color: $primary-color;
         div{
-            button{}
+            button{
+                border: 2px solid $backg-white;
+            }
             form{
-                height: 5vh;
+
                 .width-input{
                     width: 30vw;
+                    height: 30px;
                     font-size: 1.6rem;
                 }
                 :focus{

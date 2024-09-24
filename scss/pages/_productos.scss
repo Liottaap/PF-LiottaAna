@@ -9,7 +9,7 @@ main {
             @include flex(center,center,row);
             flex-wrap: wrap;
             li{
-                padding: 22px;
+                padding: 15px;
                 border-right: 3px solid white;
                 background-color: $primary-color;
                 &:hover{
@@ -24,29 +24,39 @@ main {
     }
 
     .products-container{
-        @include grid(1fr, 90% 10%);
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
         width: 90%;
         margin: 0 auto;
+        padding-top: 20px;
         border-radius: 20px;
         background-color: $backg-green;
         box-shadow: 6px 6px 20px $secondary-color;
         .products-list{
-            @include flex(center,center,row);
+            background-color: $backg-green;
+            display: flex;
             flex-wrap: wrap;
-            grid-row: 1 / 2;
+            justify-content: center;
+            /* overflow y */
+            flex-grow: 1; 
+            overflow-y: scroll; 
+            max-height: calc(100vh - 150px); 
+            scrollbar-width: none;
+            ::-webkit-scrollbar {
+                display: none;
+            }
             .product-main{
                 position: relative;
                 @include size(220px,300px);
+                display: flex;
+                flex-direction: column;
+
                 margin: 10px 22px;
                 padding: 2px;
                 border-radius: 20px;
                 text-align: center;
                 border: 3px solid $primary-color;
                 background-color: #4e7748;
-
-                display: flex;
-                flex-direction: column;
                 div{
                     img{
                         width: 100%;
@@ -58,10 +68,10 @@ main {
                         @include font($backg-white,2.2rem,500);
                     }
                     p{
-                        @include font($backg-white,1.8rem,400);
+                        @include font($backg-white,2rem,400);
                         padding-top: 5px;
                         span{
-                            @include font($backg-white,2.4rem,500);
+                            @include font($backg-white,2.4rem,400);
                             padding: 5px 5px 0 0;
 
                         }
@@ -87,6 +97,7 @@ main {
         }
         .page-buttons{
             grid-row: 2 / 3;
+
             ul{
                 @include flex(center,center,row);
                 margin: 50px;
