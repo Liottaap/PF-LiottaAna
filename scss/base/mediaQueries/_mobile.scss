@@ -7,18 +7,26 @@
     .fixed-menu {
         display: flex;
     }
-    .header-logo-container a{
+    header .header-logo-container a{
         justify-content: center;
     }
     header .header-logo-container a img {
         width: 100px;
     }
-    .header-logo-container a p{
+    header .header-logo-container a p{
         display: none;
+    }
+    header .header-logo-container .nav-buttons .cart-button button, header .header-logo-container .nav-buttons .account-button button {
+        @include size(50px,50px);
+    }
+
+    /* bootstrap */
+    header .color-nav div form .width-input {
+        width: 50vw
     }
     /* --- MAIN ---*/
     /* --- MAIN ---*/
-    .section-1-top {
+    main .section-1-top {
         @include flex(center,center,row);
         position: relative;
     }

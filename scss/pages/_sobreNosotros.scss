@@ -13,15 +13,11 @@ main{
 
         .sobre-nosotros-top{
             grid-row: 1 / 2;
-            display: flex;
-            align-items: center;
+            @include flex(center,center,row);
             border-bottom: none;
-            justify-content: center;
-
             p{
+                @include font($dark-letter,1.6,400);
                 width: 50%;
-                font-size: 1.6rem;
-                color: $dark-letter;
                 padding: 2px;
                 text-align: center;
                 span{
@@ -30,21 +26,18 @@ main{
                 }
             }
             img{
+                @include size(50%,100%);
                 object-fit: cover;
-                width: 50%;
-                height: 100%;
+
             }
         }
         .sobre-nosotros-bottom{
             grid-row: 2 / 3;
-            display: flex;
+            @include flex(space-between,center,row);
             border: 3px dotted $secondary-color;
-            justify-content: space-between;
-            align-items: center;
             img{
+                @include size(100%,100%);
                 border-right: 3px dotted $secondary-color;
-                width: 100%;
-                height: 100%;
                 object-fit: cover;
                 cursor: pointer;
                 &:nth-child(6){
