@@ -32,7 +32,7 @@ header {
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
-                    background-image: url("../img/icono/shopping-cart-white_red.png");
+                    background-image: url("../../img/icono/shopping-cart_fondo.png");
                     &:hover{
                         transform: scale(1.1);
                     }
@@ -54,7 +54,7 @@ header {
                     border-radius: 50%;
                     border: none;
                     cursor: pointer;
-                    background-image: url("../img/icono/account-manager_red.png");
+                    background-image: url("../../img/icono/account-manager.png");
                     &:hover{
                         transform: scale(1.1);
                     }

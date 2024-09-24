@@ -11,11 +11,9 @@
         justify-content: center;
     }
     header .header-logo-container a img {
-        width: 100px;
-    }
-    header .header-logo-container a p{
         display: none;
     }
+
     header .header-logo-container .nav-buttons .cart-button button, header .header-logo-container .nav-buttons .account-button button {
         @include size(50px,50px);
     }
@@ -201,7 +199,8 @@
         height: 50vh;
 
     }
-    main .fixed-wsp-button a img {
+    main .fixed-wsp-button a img,
+    .main-container-index .fixed-wsp-button a img{
         width: 60px;
     }
 

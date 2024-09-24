@@ -137,7 +137,7 @@ header .header-logo-container .nav-buttons .cart-button button, header .header-l
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/icono/shopping-cart-white_red.png");
+  background-image: url("../../img/icono/shopping-cart_fondo.png");
 }
 header .header-logo-container .nav-buttons .cart-button button:hover, header .header-logo-container .nav-buttons .account-button button:hover {
   transform: scale(1.1);
@@ -159,7 +159,7 @@ header .header-logo-container .nav-buttons .account-button button {
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  background-image: url("../img/icono/account-manager_red.png");
+  background-image: url("../../img/icono/account-manager.png");
 }
 header .header-logo-container .nav-buttons .account-button button:hover {
   transform: scale(1.1);
@@ -1022,9 +1022,6 @@ main .carrito .total-price .pay-button-container:hover {
     justify-content: center;
   }
   header .header-logo-container a img {
-    width: 100px;
-  }
-  header .header-logo-container a p {
     display: none;
   }
   header .header-logo-container .nav-buttons .cart-button button, header .header-logo-container .nav-buttons .account-button button {
@@ -1196,7 +1193,8 @@ main .carrito .total-price .pay-button-container:hover {
   main .ubicacion-container iframe {
     height: 50vh;
   }
-  main .fixed-wsp-button a img {
+  main .fixed-wsp-button a img,
+  .main-container-index .fixed-wsp-button a img {
     width: 60px;
   }
   /* ---------SOBRE NOSOTROS ----------*/
