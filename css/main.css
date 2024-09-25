@@ -370,7 +370,6 @@ header .color-nav div div .modifier-list li ul :hover {
   height: auto;
 }
 .main-container-index .section-2-main .section-2-main-cards-container .nuevo-container, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container, .main-container-index .section-2-main .section-2-main-cards-container .promos-container {
-  display: flex;
   height: 50vh;
   margin-bottom: 50px;
   gap: 10px;
@@ -432,7 +431,7 @@ header .color-nav div div .modifier-list li ul :hover {
   font-size: 1.8rem;
   font-weight: 500;
 }
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container:target, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container:target, .main-container-index .section-2-main .section-2-main-cards-container .promos-container:target {
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container {
   display: flex;
   opacity: 1;
 }

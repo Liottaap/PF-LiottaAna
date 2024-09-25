@@ -114,7 +114,7 @@
             margin: 0 auto;
             @include size(70%,auto);
                 .nuevo-container, .destacados-container, .promos-container{
-                    display: flex;
+
                     height: 50vh;
                     margin-bottom: 50px;
                     gap: 10px;
@@ -173,11 +173,12 @@
                             }
                         }
                     }
-                    &:target{
-                        display: flex;
-                        opacity: 1;
-                    }
                 }
+                .nuevo-container {
+                    display: flex;
+                    opacity: 1;
+                }
+
             .ver-mas-button{
             
                 @extend %estilos-botones;
