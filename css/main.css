@@ -272,33 +272,39 @@ header .color-nav div div .modifier-list li ul :hover {
   gap: 15px;
 }
 .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
   width: 50%;
   height: 100%;
-  background-color: #412f26;
 }
 .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  color: black;
-  font-size: 2.6rem;
-  font-weight: 500;
+  display: block; /* Permite que el enlace se comporte como un bloque */
+  position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
-  box-shadow: 5px 5px 10px rgb(93, 37, 16);
-  text-shadow: 2px 2px rgb(255, 255, 255);
-  background-image: url("/img/assets/banner_instagram.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+.main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 2.2rem;
+  font-weight: 600;
+  z-index: 1;
 }
 .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -307,22 +313,27 @@ header .color-nav div div .modifier-list li ul :hover {
   height: 100%;
 }
 .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  color: black;
-  font-size: 2.6rem;
-  font-weight: 500;
-  text-shadow: 2px 2px rgb(255, 255, 255);
-  text-align: center;
+  display: block; /* Permite que el enlace se comporte como un bloque */
+  position: relative;
   width: 100%;
   height: 100%;
-  box-shadow: 5px 5px 10px rgb(93, 37, 16);
-  background-image: url("/img/assets/banner_mediosDePago.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+.main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a p {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 2.2rem;
+  font-weight: 600;
+  z-index: 1;
 }
 .main-container-index .section-2-main {
   display: grid;
@@ -940,9 +951,9 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
   .main-container-index .section-1-main .section-1-top p {
     font-size: 1.8rem;
   }
-  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a,
-  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a {
-    font-size: 2rem;
+  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a p,
+  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a p {
+    font-size: 1.8rem;
   }
   /* botones wsp */
   .section-1-bottom a {
@@ -1052,6 +1063,7 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
     position: absolute;
     top: 0;
     z-index: 1;
+    font-size: 1.2rem;
     padding: 10px;
     color: #1b1614;
     background-color: rgba(145, 118, 118, 0.5);
@@ -1060,6 +1072,7 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
   .main-container-index .section-1-main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 70% repeat(2, 15% 15%);
+    row-gap: 20px;
   }
   .main-container-index .section-1-main .section-1-bottom {
     grid-row: 2/4;
@@ -1070,11 +1083,11 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
   .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left,
   .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right {
     width: 100%;
-    height: 100%;
+    height: 50%;
   }
-  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a,
-  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a {
-    font-size: 1.5rem;
+  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a p,
+  .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a p {
+    font-size: 1.6rem;
   }
   .main-container-index .section-2-main .section-2-main-ul-container ul {
     gap: 2px;
