@@ -3,7 +3,7 @@ header {
     .header-logo-container {
         @include grid (40% 60%, 1fr);
         background-color: $primary-color;
-        a {
+        .logo-header {
             @include flex(flex-start,center,row);
             font-family: "Playpen Sans", cursive;
             font-weight: 600;
@@ -17,55 +17,49 @@ header {
         }
         .nav-buttons {
             @include flex(flex-end,flex-start,row);
-            margin-top:20px;
-            background: transparent;
-            padding-right: 20px;
             gap: 15px;
+            margin-top:20px;
+            padding-right: 20px;
             .cart-button{
                 @include flex(center,center,column);
-                button{
-                    margin-bottom: 15px;
-                    @include size(60px,60px);
-                    border-radius: 50%;
-                    border: none;
-                    cursor: pointer;
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-image: url("../../img/icono/shopping-cart_fondo.png");
-                    &:hover{
-                        transform: scale(1.1);
+                a{
+                    @include flex(center,center,column);
+                    text-align: center;
+                    gap:5px;
+                    img{
+                        @include size(60px,60px);
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                    p{
+                        font-size: 1.4rem;
+                        font-weight: 400;
                     }
                 }
                 a{
                     @include font(whitesmoke,1.4rem,400);
                     text-align: center;
                     font-family: "Roboto", sans-serif;
-                    background: transparent;
                 }
             }
             .account-button{
-                @extend .cart-button;
-                button{
-                    @include size(60px,60px);
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    border-radius: 50%;
-                    border: none;
-                    cursor: pointer;
-                    background-image: url("../../img/icono/account-manager.png");
+                @include flex(center,center,column);
+                gap: 5px;
+                a{
+                    @include font(whitesmoke,1.4rem,400);
+                    text-align: center;
+                    font-family: "Roboto", sans-serif;
+                    img{
+                        @include size(60px,60px);
+                    }
                     &:hover{
                         transform: scale(1.1);
                     }
-                }
-                .account-button-text{
-                    @include flex(center,center,column);
-                    a{
-                        @include font(whitesmoke,1.4rem,400);
-                        text-align: center;
-                        font-family: "Roboto", sans-serif;
-                        background: transparent;
+                    ul{
+                        li{
+                            a{}
+                        }
                     }
                 }
             }
@@ -89,7 +83,6 @@ header {
                     outline: none;
                     box-shadow: none;   
                 }
-                
             }
 
 

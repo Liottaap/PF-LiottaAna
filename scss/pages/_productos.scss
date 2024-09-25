@@ -64,19 +64,23 @@ main {
                     }
                 }
                 .product-main-texto{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
                     h3{
-                        @include font($backg-white,2.2rem,500);
+                        @include font($backg-white,1.8rem,500);
                     }
                     p{
-                        @include font($backg-white,2rem,400);
-                        padding-top: 5px;
+                        @include font($backg-white,1.8rem,400);
                         span{
-                            @include font($backg-white,2.4rem,400);
+                            @include font($backg-white,2rem,400);
                             padding: 5px 5px 0 0;
 
                         }
                     }
                 }
+                
                 .heart-button{
                     position: absolute;
                     margin: 10px;

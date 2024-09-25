@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- FUENTES -->
+    <!-- meta description -->
+    <meta name="description" content="Oro Verde: productos saludables y orgánicos, como semillas, harinas integrales, aceites, frutos secos, mermeladas y más. Alimentación consciente y bienestar.">
+    <!-- FUENTES -->
     <!-- roboto  font-family: "Roboto", sans-serif; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,67 +41,74 @@
     <!------------ HEADER ------------>
     <header>
         <div class="header-logo-container">
-            <a href="../index.html">
+            <a class="logo-header"href="../index.html">
                 <img src="../img/assets/logov1.png" alt="Oro Verde">
                 <p>Oro Verde</p>
             </a>
                     <!-- nav-buttons -->
             <div class="nav-buttons">
                 <div class="cart-button">
-                    <button></button>
-                    <a href="./carrito.html">Carrito</a>
+                    <a href="./carrito">
+                        <img src="../img/icono/shopping-cart_fondo.png" alt="Ver listado de productos en tu carrito.">
+                        <p>Carrito</p>
+                    </a>
                 </div>
                 <div class="account-button">
-                    <button></button>
-                    <div class="account-button-text">
-                        <a href="">Iniciar Sesión</a>
-                        <a href="">Registrarse</a>
-                    </div>
-                </div>
-
-            </div>                
-        </div>          
-
-
-    <nav class="navbar navbar-expand-lg color-nav pb-3">
-        <div class="container-fluid flex-row">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 modifier-list">
-                    <li class="nav-item ">
-                        <a class="nav-link color-nav-text " aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown color-nav-text">
-                        <a class="nav-link dropdown-toggle color-nav-text" href="./productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
-                        </a>
-                        <ul class="dropdown-menu ">
-                            <li><a class="dropdown-item modify-letra" href="#">Destacados</a></li>
-                            <li><a class="dropdown-item modify-letra" href="#">Novedades</a></li>
-                            <li><a class="dropdown-item modify-letra" href="#">Promociones</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item modify-letra" href="./productos.html">Todos los productos</a></li>
+                    <a href="#">
+                        <img src="../img/icono/account-manager.png" alt="Inicia sesión en tu cuenta o registrarte. ">
+                        <ul>
+                            <li>
+                                <a href="#">Iniciar Sesión</a>
+                            </li>
+                            <li>
+                                <a href="#">Registrarse</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-nav-text" href="./contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link color-nav-text" href="./sobreNosotros.html">Sobre Nosotros</a>
-                    </li>
-                    <li class="nav-item color-nav-text">
-                        <a class="nav-link color-nav-text" href="./carrito.html">Carrito</a>
-                    </li>
-                </ul>
-            
+                    </a>
+                </div>
+            </div>                
+        </div>       
+
+
+        <nav class="navbar navbar-expand-lg color-nav pb-3">
+            <div class="container-fluid flex-row">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 modifier-list">
+                        <li class="nav-item ">
+                            <a class="nav-link color-nav-text " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown color-nav-text">
+                            <a class="nav-link dropdown-toggle color-nav-text" href="./productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                            </a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item modify-letra" href="#">Destacados</a></li>
+                                <li><a class="dropdown-item modify-letra" href="#">Novedades</a></li>
+                                <li><a class="dropdown-item modify-letra" href="#">Promociones</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item modify-letra" href="./productos.html">Todos los productos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-nav-text" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-nav-text" href="./sobreNosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item color-nav-text">
+                            <a class="nav-link color-nav-text" href="./carrito.html">Carrito</a>
+                        </li>
+                    </ul>
+                
+                </div>
+                <form class="d-flex" role="search" id="Search">
+                    <input class="form-control me-2 width-input" type="search" placeholder="Buscar" aria-label="Search">
+                </form>
             </div>
-            <form class="d-flex" role="search" id="Search">
-                <input class="form-control me-2 width-input" type="search" placeholder="Buscar" aria-label="Search">
-            </form>
-        </div>
-    </nav>
+        </nav>
 
     </header>
 
@@ -110,22 +119,22 @@
         <section class="categories-container">
             <ul>
                 <li>
-                    <a href="">Promociones</a>
+                    <a href="#">Promociones</a>
                 </li>
                 <li>
-                    <a href="">Mixes y Semillas</a>
+                    <a href="#">Mixes y Semillas</a>
                 </li>
                 <li>
-                    <a href="">Snacks</a>
+                    <a href="#">Snacks</a>
                 </li>
                 <li>
-                    <a href="">Almacén</a>
+                    <a href="#">Almacén</a>
                 </li>
                 <li>
-                    <a href="">Aceites y aromáticas</a>
+                    <a href="#">Aceites y aromáticas</a>
                 </li>
                 <li>
-                    <a href="">Bebidas e infusiones</a>
+                    <a href="#">Bebidas e infusiones</a>
                 </li>
             </ul>
         </section>
@@ -135,10 +144,10 @@
             <div class="products-list">
                 <div class="product-main">
                     <div>
-                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
+                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva de 1.5L marca Pepito">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Aceite de oliva </h3>
+                        <h3>Aceite de oliva 1.5L - Pepito</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -147,12 +156,11 @@
                     </div>
                 </div>
                 <div class="product-main">
-
                     <div>
-                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Mermelada orgánica </h3>
+                        <h3>Salsa de tomate Orgánica 500ml - Pepito</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -161,13 +169,11 @@
                     </div>
                 </div>
                 <div class="product-main">
-
                     <div>
-                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Mermelada orgánica </h3>
-                        <p><span>$</span>1000</p>
+                        <h3>Salsa de tomate Orgánica 500ml - Pepito</h3>                      <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
                         <input type="checkbox" name="" id="btn-switch-3">
@@ -176,11 +182,11 @@
                 </div>
                 <div class="product-main">
                     <div>
-                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
+                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva de 1.5L marca Pepito">
 
                     </div>
                     <div class="product-main-texto">
-                        <h3>Aceite de oliva </h3>
+                        <h3>Aceite de oliva 1.5L - Pepito</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -190,10 +196,10 @@
                 </div>
                 <div class="product-main">
                     <div>
-                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Mermelada orgánica </h3>
+                        <h3>Salsa de tomate Orgánica 500ml - Pepito</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -203,11 +209,10 @@
                 </div>
                 <div class="product-main">
                     <div>
-                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas">
-
+                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas surtidas de 500gr marca Mixed Nuts">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Aceite de oliva </h3>
+                        <h3>Mix de semillas 500gr - Mixed Nuts</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -217,11 +222,11 @@
                 </div>
                 <div class="product-main">
                     <div>
-                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
 
                     </div>
                     <div class="product-main-texto">
-                        <h3>Mermelada orgánica </h3>
+                        <h3>Salsa de tomate Orgánica 500ml - Pepito</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -231,11 +236,10 @@
                 </div>
                 <div class="product-main">
                     <div>
-                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas">
-
+                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas surtidas de 500gr marca Mixed Nuts">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Mermelada orgánica </h3>
+                        <h3>Salsa de tomate Orgánica 500ml - Pepito</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -245,10 +249,10 @@
                 </div>
                 <div class="product-main">
                     <div>
-                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
+                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva de 1.5L marca Pepito">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Aceite de oliva </h3>
+                        <h3>Aceite de oliva 1.5L - Pepito</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -257,12 +261,11 @@
                     </div>
                 </div>
                 <div class="product-main">
-
                     <div>
-                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Mermelada orgánica </h3>
+                        <h3>Salsa de tomate Orgánica 500ml - Pepito</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -271,12 +274,11 @@
                     </div>
                 </div>
                 <div class="product-main">
-
                     <div>
-                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Mermelada orgánica </h3>
+                        <h3>Salsa de tomate Orgánica 500ml - Pepito</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -286,11 +288,10 @@
                 </div>
                 <div class="product-main">
                     <div>
-                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
-
+                        <img src="../img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva de 1.5L marca Pepito">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Aceite de oliva </h3>
+                        <h3>Aceite de oliva 1.5L - Pepito</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -300,10 +301,10 @@
                 </div>
                 <div class="product-main">
                     <div>
-                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Mermelada orgánica </h3>
+                        <h3>Salsa de tomate Orgánica 500ml - Pepito</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -313,11 +314,10 @@
                 </div>
                 <div class="product-main">
                     <div>
-                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas">
-
+                        <img src="../img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas surtidas de 500gr marca Mixed Nuts">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Aceite de oliva </h3>
+                        <h3>Mix de semillas 500gr - Mixed Nuts</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -327,11 +327,10 @@
                 </div>
                 <div class="product-main">
                     <div>
-                        <img src="../img/assets/producto_mermelada.jpg" alt="Mermelada">
-
+                        <img src="../img/assets/producto_mermelada.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                     </div>
                     <div class="product-main-texto">
-                        <h3>Mermelada orgánica </h3>
+                        <h3>Salsa de tomate Orgánica 500ml - Pepito</h3>
                         <p><span>$</span>1000</p>
                     </div>
                     <div class="heart-button">
@@ -345,39 +344,36 @@
             <div class="page-buttons">
                 <ul>
                     <li>
-                        <a href=""><</a>
+                        <a href="#"><</a>
                     </li>
                     <li>
-                        <a href="">1</a>
+                        <a href="#">1</a>
                     </li>
                     <li>
-                        <a href="">2</a>
+                        <a href="#">2</a>
                     </li>
                     <li>
-                        <a href="">3</a>
+                        <a href="#">3</a>
                     </li>
                     <li>
-                        <a href="">4</a>
+                        <a href="#">4</a>
                     </li>
                     <li>
-                        <a href="">5</a>
+                        <a href="#">5</a>
                     </li>
                     <li>
-                        <a href="">></a>
+                        <a href="#">></a>
                     </li>
                 </ul>
             </div>
         </section>
 
-
             <!-- Botón carrito -->
-            
         <div class="fixed-cart-button fixed-button">
             <a href="./carrito.html">
                 <img src="../img/icono/shopping-cart_transparent.png" alt="Ir al Carrito">
             </a>
         </div>
-
     </main>
 
     <!-------------- FOOTER ------------->
@@ -391,21 +387,18 @@
             <p>Todos los derechos reservados</p>
         </div>
             <!-- dirección y contacto -->
-            <div class="footer-container-contacto">
-                <h3>Contacto</h3>
-                <p>Lorem ipsum dolor 1022 sit <br>(264) - 1234567 / (264) - 12345678 </p>
-
-            </div>
-            <!-- Redes Sociales -->
-            <div class="footer-container-redes">
-                <h3>Redes Sociales</h3>
-                    <ul>
-                        <li><a href=""><img src="../img/icono/icon_instagram.png" alt="Instagram"></a></li>
-                        <li><a href=""><img src="../img/icono/icon_facebook.png" alt="Facebook"></a></li>
-                        <li><a href=""><img src="../img/icono/icon_whatsapp.png" alt="Whatsapp"></a></li>
-                    </ul>
-
-            </div>
+        <div class="footer-container-contacto">
+            <h3>Contacto</h3>
+            <p>Calle siempre viva 1022 (N) <br>(264) - 1234567 / (264) - 12345678 </p>
+        </div>
+        <!-- Redes Sociales -->
+        <div class="footer-container-redes">
+            <h3>Redes Sociales</h3>
+                <ul>
+                    <li><a href="#"><img src="../img/icono/icon_instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="../img/icono/icon_facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="../img/icono/icon_whatsapp.png" alt="Whatsapp"></a></li>
+                </ul>
         </div>
     </footer>
 

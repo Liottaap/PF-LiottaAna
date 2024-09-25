@@ -2,8 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description -->
+    <meta name="description" content="Descubre Oro Verde en San Juan, Argentina: tienda online y física de productos saludables como semillas, harinas, aceites y más. ¡Visítanos o compra en línea!">
     <!-- FUENTES -->
     <!-- roboto  font-family: "Roboto", sans-serif; -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
 
-    <title>Oro Verde</title>
+    <title>Oro Verde - Tienda de Productos Saludables en San Juan</title>
 </head>
 <body>
     <!-- Fixed-nav  -  version mobile -->
@@ -27,7 +28,7 @@
             <svg xmlns="http://www.w3.org/2000/svg"class="menu-svg" id="Outline" viewBox="0 0 24 24" width="30" height="30" margin="2px"><path d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,0,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,0,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586A1.008,1.008,0,0,1,22,11.19Z"/></svg>
         </a>
         <div>
-            <img src="./img/icono/logo_menuMobile.png" alt="Logo del menu mobile">
+            <img src="./img/icono/logo_menuMobile.png" alt="Logo del menu mobile de Oro Verde.">
         </div>
         <a href="#Search">
             <svg xmlns="http://www.w3.org/2000/svg" class="menu-svg" id="Outline" viewBox="0 0 24 24" width="30" height="30"><path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/></svg>
@@ -38,25 +39,33 @@
     <!------------ HEADER ------------>
     <header>
         <div class="header-logo-container">
-            <a href="./index.html">
-                <img src="./img/assets/logov1.png" alt="Oro Verde">
+            <a class= "logo-header" href="./index.html">
+                <img src="./img/assets/logov1.png" alt="Logotipo de tienda saludable Oro Verde, ubicada en San Juan Argentina">
                 <p>Oro Verde</p>
             </a>
-                    <!-- nav-buttons -->
+            <!-- nav-buttons -->
             <div class="nav-buttons">
                 <div class="cart-button">
-                    <button></button>
-                    <a href="./pages/carrito.html">Carrito</a>
+                    <a href="./carrito">
+                        <img src="../img/icono/shopping-cart_fondo.png" alt="Ver listado de productos en tu carrito.">
+                        <p>Carrito</p>
+                    </a>
                 </div>
                 <div class="account-button">
-                    <button></button>
-                    <div class="account-button-text">
-                        <a href="">Iniciar Sesión</a>
-                        <a href="">Registrarse</a>
-                    </div>
+                    <a href="#">
+                        <img src="../img/icono/account-manager.png" alt="Inicia sesión en tu cuenta o registrarte.">
+                        <ul>
+                            <li>
+                                <a href="#">Iniciar Sesión</a>
+                            </li>
+                            <li>
+                                <a href="#">Registrarse</a>
+                            </li>
+                        </ul>
+                    </a>
                 </div>
 
-            </div>                
+            </div>                 
         </div>   
 
         <nav class="navbar navbar-expand-lg color-nav pb-3">
@@ -105,22 +114,21 @@
         <!-- Section 1 -->
         <section class="section-1-main">
             <div class="section-1-top">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga nemo officia repudiandae in cumque quisquam explicabo quo? Amet quidem corrupti quo at asperiores rem nulla facere cupiditate. Adipisci fuga nemo officia repudiandae in cumque quisquam explicabo quo?</p>
+                <p>¡Bienvenido a <span>Oro Verde🌿!</span><br>
+                    Explora nuestra amplia gama de productos saludables.<br> 
+                    Cada artículo ha sido cuidadosamente seleccionado para ayudarte a llevar un estilo de vida más equilibrado y nutritivo.<br>
+                    ¡No dudes en descubrir todo lo que tenemos para ofrecerte!</p>
                 <img src="./img/assets/imagen_section1.jpg" alt="Imagen principal - Es un cliente comprando en la tienda">
             </div>
             
             <div class="section-1-bottom">
                 <div class="section-1-bottom-right">
-                    <a href="/"_blank>¡Encontranos en nuestro INSTAGRAM!
-                    </a>
+                    <a href="/">¡Encontranos en nuestro INSTAGRAM!</a>
                 </div>
                 <div class="section-1-bottom-left">
-                    <a href="/"_blank>¡Conocé nuestros medios de pago!
-                    </a>
+                    <a href="/">¡Conocé nuestros medios de pago!</a>
                 </div>
             </div>
-            
-
         </section>
 
         <h1 class="h1-main">¡Mirá nuestros productos y aprovechá las ofertas!</h1>
@@ -146,210 +154,210 @@
                 <!-- Contenedor de productos NUEVOS -->
                 <div class="nuevo-container" id="nuevo">
                     <div class="card-main">
-                        <img src="./img/assets/producto_aceiteoliva.jpg " alt="Aceite de oliva">
+                        <img src="./img/assets/producto_aceiteoliva.jpg " alt="Aceite de Oliva de 1.5L marca Pepito">
                         <div class="card-main-text">
-                            <h3>Aceite de oliva </h3>
-                            <p>$1000</p>
+                            <h3>Aceite de oliva 1.5L - Pepito </h3>
+                            <p>$2000</p>
                         </div>
     
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="./img/assets/producto_SalsaTomate.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                         <div class="card-main-text">
-                            <h3>Mermelada orgánica </h3>
-                            <p>$1000</p>
+                            <h3>Salsa de tomate 500mL - Pepito </h3>
+                            <p>$1100</p>
                         </div>
     
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
+                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Aceite de Oliva de 1.5L marca Pepito">
                         <div class="card-main-text">
-                            <h3>Mix de semillas </h3>
+                            <h3>Mix de semillas 500gr - Mixed Nuts </h3>
                             <p>$1000</p>
                         </div> 
     
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mermelada.jpg" alt="Mermelada"> 
+                        <img src="./img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva de 1.5L marca Pepito"> 
                         <div class="card-main-text">
-                            <h3>Aceite de oliva </h3>
-                            <p>$1000</p>
+                            <h3>Aceite de oliva 1.5L - Pepito</h3>
+                            <p>$2000</p>
                         </div>
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva">
+                        <img src="./img/assets/producto_SalsaTomate.jpg" alt="Aceite de Oliva de 1.5L marca Pepito">
                         <div class="card-main-text">
-                            <h3>Mermelada orgánica </h3>
-                            <p>$1000</p>
+                            <h3>Salsa de tomate 500mL - Pepito </h3>
+                            <p>$1100</p>
                         </div>
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas surtidas de 500gr marca Mixed Nuts">
                         <div class="card-main-text">
-                            <h3>Mix de semillas </h3>
+                            <h3>Mix de semillas 500gr - Mixed Nuts</h3>
                             <p>$1000</p>
                         </div> 
     
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva"> 
+                        <img src="./img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva de 1.5L marca Pepito"> 
                         <div class="card-main-text">
-                            <h3>Aceite de oliva </h3>
-                            <p>$1000</p>
+                            <h3>Aceite de oliva 1.5L - Pepito</h3>
+                            <p>$2000</p>
                         </div>
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="./img/assets/producto_SalsaTomate.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                         <div class="card-main-text">
-                            <h3>Mermelada orgánica </h3>
-                            <p>$1000</p>
+                            <h3>Salsa de tomate 500mL - Pepito </h3>
+                            <p>$1100</p>
                         </div>
                     </div>
                 </div>
                 <!-- Contenedor de productos DESTACADOS -->
                 <div class="destacados-container" id="destacados">
                     <div class="card-main">
-                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas">
+                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas surtidas de 500gr marca Mixed Nuts">
                         <div class="card-main-text">
-                            <h3>Aceite de oliva </h3>
+                            <h3>Mix de semillas 500gr - Mixed Nuts</h3>
                             <p>$1000</p>
                         </div>
     
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="./img/assets/producto_SalsaTomate.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                         <div class="card-main-text">
-                            <h3>Mermelada orgánica </h3>
-                            <p>$1000</p>
+                            <h3>Salsa de tomate 500mL - Pepito</h3>
+                            <p>$1100</p>
                         </div>
     
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas">
+                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas surtidas de 500gr marca Mixed Nuts">
                         <div class="card-main-text">
-                            <h3>Mix de semillas </h3>
+                            <h3>Mix de semillas 500gr - Mixed Nuts</h3>
                             <p>$1000</p>
                         </div> 
     
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mermelada.jpg" alt="Mermelada"> 
+                        <img src="./img/assets/producto_SalsaTomate.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito"> 
                         <div class="card-main-text">
-                            <h3>Aceite de oliva </h3>
+                            <h3>Salsa de tomate 500mL - Pepito</h3>
+                            <p>$1100</p>
+                        </div>
+                    </div>
+    
+                    <div class="card-main">
+                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas surtidas de 500gr marca Mixed Nuts">
+                        <div class="card-main-text">
+                            <h3>Mix de semillas 500gr - Mixed Nuts</h3>
                             <p>$1000</p>
                         </div>
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas">
+                        <img src="./img/assets/producto_SalsaTomate.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                         <div class="card-main-text">
-                            <h3>Mermelada orgánica </h3>
-                            <p>$1000</p>
-                        </div>
-                    </div>
-    
-                    <div class="card-main">
-                        <img src="./img/assets/producto_mermelada.jpg" alt="Mermelada">
-                        <div class="card-main-text">
-                            <h3>Mix de semillas </h3>
-                            <p>$1000</p>
+                            <h3>Salsa de tomate 500mL - Pepito<</h3>
+                            <p>$1100</p>
                         </div> 
     
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas"> 
+                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas surtidas de 500gr marca Mixed Nuts"> 
                         <div class="card-main-text">
-                            <h3>Aceite de oliva </h3>
+                            <h3>Mix de semillas 500gr - Mixed Nuts</h3>
                             <p>$1000</p>
                         </div>
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="./img/assets/producto_SalsaTomate.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                         <div class="card-main-text">
-                            <h3>Mermelada orgánica </h3>
-                            <p>$1000</p>
+                            <h3>Salsa de tomate 500mL - Pepito </h3>
+                            <p>$1100</p>
                         </div>
                     </div>
                 </div>
                 <!-- Contenedor de productos PROMOCIONES -->
                 <div class="promos-container" id="promos">
                     <div class="card-main">
-                        <img src="./img/assets/producto_aceiteoliva.jpg" alt="Aceite de oliva">
+                        <img src="./img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva de 1.5L marca Pepito">
                         <div class="card-main-text">
-                            <h3>Aceite de oliva </h3>
-                            <p>$1000</p>
+                            <h3>Aceite de oliva 1.5L - Pepito</h3>
+                            <p>$2000</p>
                         </div>
     
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="./img/assets/producto_SalsaTomate.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                         <div class="card-main-text">
-                            <h3>Mermelada orgánica </h3>
-                            <p>$1000</p>
+                            <h3>Salsa de tomate 500mL - Pepito </h3>
+                            <p>$1100</p>
                         </div>
     
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas">
+                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de semillas 500gr - Mixed Nuts">
                         <div class="card-main-text">
-                            <h3>Mix de semillas </h3>
+                            <h3>Mix de semillas 500gr - Mixed Nuts </h3>
                             <p>$1000</p>
                         </div> 
     
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva"> 
+                        <img src="./img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva de 1.5L marca Pepito"> 
                         <div class="card-main-text">
-                            <h3>Aceite de oliva </h3>
-                            <p>$1000</p>
+                            <h3>Aceite de oliva 1.5L - Pepito</h3>
+                            <p>$2000</p>
                         </div>
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="./img/assets/producto_SalsaTomate.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                         <div class="card-main-text">
-                            <h3>Mermelada orgánica </h3>
-                            <p>$1000</p>
+                            <h3>Salsa de tomate 500mL - Pepito</h3>
+                            <p>$1100</p>
                         </div>
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de semillas">
+                        <img src="./img/assets/producto_mixsemillas.jpg" alt="Mix de Semillas surtidas de 500gr marca Mixed Nuts">
                         <div class="card-main-text">
-                            <h3>Mix de semillas </h3>
+                            <h3>Mix de semillas 500gr - Mixed Nuts</h3>
                             <p>$1000</p>
                         </div> 
     
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva"> 
+                        <img src="./img/assets/producto_aceiteoliva.jpg" alt="Aceite de Oliva de 1.5L marca Pepito"> 
                         <div class="card-main-text">
-                            <h3>Aceite de oliva </h3>
-                            <p>$1000</p>
+                            <h3>Aceite de oliva 1.5L - Pepito</h3>
+                            <p>$2000</p>
                         </div>
                     </div>
     
                     <div class="card-main">
-                        <img src="./img/assets/producto_mermelada.jpg" alt="Mermelada">
+                        <img src="./img/assets/producto_SalsaTomate.jpg" alt="Salsa de tomate orgánica de 500ml marca Pepito">
                         <div class="card-main-text">
-                            <h3>Mermelada orgánica </h3>
-                            <p>$1000</p>
+                            <h3>Salsa de tomate 500mL - Pepito </h3>
+                            <p>$1100</p>
                         </div>
                     </div>
                 </div>
@@ -363,7 +371,7 @@
     
         <!-- BOTÓN DE WHATSSAP - FIXED -->
         <div class="fixed-wsp-button fixed-button">
-            <a href="">
+            <a href="#">
                 <img src="./img/icono/whatsapp_fixed.png" alt="Link a nuestro Whatssap">
                 </a>
         </div>
@@ -386,16 +394,16 @@
             <!-- dirección y contacto -->
             <div class="footer-container-contacto">
                 <h3>Contacto</h3>
-                <p>Lorem ipsum dolor 1022 sit <br>(264) - 1234567 / (264) - 12345678 </p>
+                <p>Calle siempre viva 1022 (N) <br>(264) - 1234567 / (264) - 12345678 </p>
 
             </div>
             <!-- Redes Sociales -->
             <div class="footer-container-redes">
                 <h3>Redes Sociales</h3>
                 <ul>
-                    <li><a href=""><img src="./img/icono/icon_instagram.png" alt="Instagram"></a></li>
-                    <li><a href=""><img src="./img/icono/icon_facebook.png" alt="Facebook"></a></li>
-                    <li><a href=""><img src="./img/icono/icon_whatsapp.png" alt="Whatsapp"></a></li>
+                    <li><a href="#"><img src="./img/icono/icon_instagram.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="./img/icono/icon_facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="./img/icono/icon_whatsapp.png" alt="Whatsapp"></a></li>
                 </ul>
             </div>
     </footer>

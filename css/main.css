@@ -62,6 +62,10 @@ main h1 {
   font-weight: 800;
 }
 
+header ol, ul {
+  padding-left: 0;
+}
+
 /*------------ ESTILOS DE INDEX -------------*/
 .fixed-menu {
   position: fixed;
@@ -94,7 +98,7 @@ header .header-logo-container {
   grid-template-rows: 1fr;
   background-color: #4e7748;
 }
-header .header-logo-container a {
+header .header-logo-container .logo-header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -103,10 +107,10 @@ header .header-logo-container a {
   font-weight: 600;
   background: -webkit-linear-gradient(90deg, #4e7748 10%, #c7965c 90%);
 }
-header .header-logo-container a img {
+header .header-logo-container .logo-header img {
   width: 150px;
 }
-header .header-logo-container a p {
+header .header-logo-container .logo-header p {
   color: #fff2eb;
   font-size: 5rem;
   font-weight: 500;
@@ -116,67 +120,62 @@ header .header-logo-container .nav-buttons {
   justify-content: flex-end;
   align-items: flex-start;
   flex-direction: row;
-  margin-top: 20px;
-  background: transparent;
-  padding-right: 20px;
   gap: 15px;
+  margin-top: 20px;
+  padding-right: 20px;
 }
-header .header-logo-container .nav-buttons .cart-button, header .header-logo-container .nav-buttons .account-button {
+header .header-logo-container .nav-buttons .cart-button {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-header .header-logo-container .nav-buttons .cart-button button, header .header-logo-container .nav-buttons .account-button button {
-  margin-bottom: 15px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("../../img/icono/shopping-cart_fondo.png");
-}
-header .header-logo-container .nav-buttons .cart-button button:hover, header .header-logo-container .nav-buttons .account-button button:hover {
-  transform: scale(1.1);
-}
-header .header-logo-container .nav-buttons .cart-button a, header .header-logo-container .nav-buttons .account-button a {
-  color: whitesmoke;
-  font-size: 1.4rem;
-  font-weight: 400;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  background: transparent;
-}
-header .header-logo-container .nav-buttons .account-button button {
-  width: 60px;
-  height: 60px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  background-image: url("../../img/icono/account-manager.png");
-}
-header .header-logo-container .nav-buttons .account-button button:hover {
-  transform: scale(1.1);
-}
-header .header-logo-container .nav-buttons .account-button .account-button-text {
+header .header-logo-container .nav-buttons .cart-button a {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+  gap: 5px;
 }
-header .header-logo-container .nav-buttons .account-button .account-button-text a {
+header .header-logo-container .nav-buttons .cart-button a img {
+  width: 60px;
+  height: 60px;
+}
+header .header-logo-container .nav-buttons .cart-button a img:hover {
+  transform: scale(1.1);
+}
+header .header-logo-container .nav-buttons .cart-button a p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+header .header-logo-container .nav-buttons .cart-button a {
   color: whitesmoke;
   font-size: 1.4rem;
   font-weight: 400;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  background: transparent;
+}
+header .header-logo-container .nav-buttons .account-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+header .header-logo-container .nav-buttons .account-button a {
+  color: whitesmoke;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+header .header-logo-container .nav-buttons .account-button a img {
+  width: 60px;
+  height: 60px;
+}
+header .header-logo-container .nav-buttons .account-button a:hover {
+  transform: scale(1.1);
 }
 header .color-nav {
   background-color: #4e7748;
@@ -237,7 +236,7 @@ header .color-nav div div .modifier-list li ul :hover {
   grid-column: 1/3;
   grid-row: 1/2;
   border: 3px solid #5D2510;
-  background-color: #f5f5f5;
+  background-color: #e4eae3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,6 +249,11 @@ header .color-nav div div .modifier-list li ul :hover {
   font-size: 1.8rem;
   font-weight: 500;
   padding: 0 20px;
+}
+.main-container-index .section-1-main .section-1-top p span {
+  font-size: 2.8rem;
+  font-family: "Playpen Sans", cursive;
+  color: #34722b;
 }
 .main-container-index .section-1-main .section-1-top img {
   justify-self: flex-end;
@@ -315,7 +319,7 @@ header .color-nav div div .modifier-list li ul :hover {
   width: 100%;
   height: 100%;
   box-shadow: 5px 5px 10px rgb(93, 37, 16);
-  background-image: url("../../img/assets/medios_de_pago.png");
+  background-image: url("../../img/assets/banner_mediosDePago.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -365,28 +369,25 @@ header .color-nav div div .modifier-list li ul :hover {
   width: 70%;
   height: auto;
 }
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container,
-.main-container-index .section-2-main .section-2-main-cards-container .destacados-container,
-.main-container-index .section-2-main .section-2-main-cards-container .promos-container {
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container, .main-container-index .section-2-main .section-2-main-cards-container .promos-container {
   display: flex;
   height: 50vh;
   margin-bottom: 50px;
   gap: 10px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
   display: none;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container:target,
-.main-container-index .section-2-main .section-2-main-cards-container .destacados-container:target,
-.main-container-index .section-2-main .section-2-main-cards-container .promos-container:target {
-  display: flex;
-  opacity: 1;
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container::-webkit-scrollbar, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container::-webkit-scrollbar, .main-container-index .section-2-main .section-2-main-cards-container .promos-container::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
 }
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main,
-.main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main,
-.main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main {
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container::-webkit-scrollbar-thumb, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container::-webkit-scrollbar-thumb, .main-container-index .section-2-main .section-2-main-cards-container .promos-container::-webkit-scrollbar-thumb {
+  background-color: #4e7748;
+  border-radius: 10px;
+}
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main, .main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main {
   flex: 0 0 auto;
   width: 200px;
   height: 300px;
@@ -395,66 +396,45 @@ header .color-nav div div .modifier-list li ul :hover {
   scroll-snap-align: center;
   text-align: center;
 }
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main:nth-child(2n),
-.main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main:nth-child(2n),
-.main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main:nth-child(2n) {
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main:nth-child(2n), .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main:nth-child(2n), .main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main:nth-child(2n) {
   background-color: #5D2510;
   border: 3px solid #5D2510;
 }
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main:nth-child(2n+1),
-.main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main:nth-child(2n+1),
-.main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main:nth-child(2n+1) {
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main:nth-child(2n+1), .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main:nth-child(2n+1), .main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main:nth-child(2n+1) {
   background-color: #4e7748;
   border: 3px solid #4e7748;
 }
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main:hover,
-.main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main:hover,
-.main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main:hover {
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main:hover, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main:hover, .main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main:hover {
   cursor: pointer;
 }
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main img,
-.main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main img,
-.main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main img {
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main img, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main img, .main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main img {
   width: 100%;
   height: auto;
   object-fit: contain;
   border-radius: 20px 20px 0 0;
   padding: 2px;
 }
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main .card-main-text,
-.main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main .card-main-text,
-.main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main .card-main-text {
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main .card-main-text, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main .card-main-text, .main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main .card-main-text {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   height: 30%;
+  margin-top: 10px;
 }
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main .card-main-text h3,
-.main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main .card-main-text h3,
-.main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main .card-main-text h3 {
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main .card-main-text h3, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main .card-main-text h3, .main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main .card-main-text h3 {
   color: whitesmoke;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main .card-main-text p,
-.main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main .card-main-text p,
-.main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main .card-main-text p {
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main .card-main-text p, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main .card-main-text p, .main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main .card-main-text p {
   color: whitesmoke;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container::-webkit-scrollbar,
-.main-container-index .section-2-main .section-2-main-cards-container .destacados-container::-webkit-scrollbar,
-.main-container-index .section-2-main .section-2-main-cards-container .promos-container::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container::-webkit-scrollbar-thumb,
-.main-container-index .section-2-main .section-2-main-cards-container .destacados-container::-webkit-scrollbar-thumb,
-.main-container-index .section-2-main .section-2-main-cards-container .promos-container::-webkit-scrollbar-thumb {
-  background-color: #4e7748;
-  border-radius: 10px;
+.main-container-index .section-2-main .section-2-main-cards-container .nuevo-container:target, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container:target, .main-container-index .section-2-main .section-2-main-cards-container .promos-container:target {
+  display: flex;
+  opacity: 1;
 }
 .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button {
   align-self: center;
@@ -587,11 +567,11 @@ main .products-container {
   margin: 0 auto;
   padding-top: 20px;
   border-radius: 20px;
-  background-color: #f5f5f5;
+  background-color: #e4eae3;
   box-shadow: 6px 6px 20px #5D2510;
 }
 main .products-container .products-list {
-  background-color: #f5f5f5;
+  background-color: #e4eae3;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -621,20 +601,25 @@ main .products-container .products-list .product-main div img {
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
+main .products-container .products-list .product-main .product-main-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 main .products-container .products-list .product-main .product-main-texto h3 {
   color: #EDE1D2;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 main .products-container .products-list .product-main .product-main-texto p {
   color: #EDE1D2;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  padding-top: 5px;
 }
 main .products-container .products-list .product-main .product-main-texto p span {
   color: #EDE1D2;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 400;
   padding: 5px 5px 0 0;
 }
@@ -692,7 +677,7 @@ main .contacto-container {
   align-items: center;
   flex-direction: row;
   margin: 50px auto;
-  background-color: #f5f5f5;
+  background-color: #e4eae3;
   border: 3px solid #5D2510;
   box-shadow: 5px 5px 10px #5D2510;
   text-align: center;
@@ -764,7 +749,7 @@ main .sobre-nosotros {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 400px 100px;
-  background-color: #f5f5f5;
+  background-color: #e4eae3;
   box-shadow: 5px 5px 10px #5D2510;
   border: 5px solid #5D2510;
   margin: 0 auto;
@@ -777,18 +762,24 @@ main .sobre-nosotros .sobre-nosotros-top {
   align-items: center;
   flex-direction: row;
   border-bottom: none;
+  color: #412f26;
 }
 main .sobre-nosotros .sobre-nosotros-top p {
   color: #412f26;
-  font-size: 1.6;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 500;
   width: 50%;
-  padding: 2px;
+  padding: 0 30px;
   text-align: center;
 }
 main .sobre-nosotros .sobre-nosotros-top p span {
-  font-weight: 500;
+  font-family: "Playpen Sans", cursive;
+  color: #34722b;
   font-size: 1.8rem;
+  font-weight: 500;
+}
+main .sobre-nosotros .sobre-nosotros-top p span:nth-child(1) {
+  font-size: 3rem;
 }
 main .sobre-nosotros .sobre-nosotros-top img {
   width: 50%;
@@ -824,7 +815,7 @@ main .carrito {
 main .carrito .first-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #f5f5f5;
+  background-color: #e4eae3;
 }
 main .carrito .first-table tr th {
   color: whitesmoke;
@@ -890,7 +881,7 @@ main .carrito .total-price {
 main .carrito .total-price table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #f5f5f5;
+  background-color: #e4eae3;
 }
 main .carrito .total-price table tr {
   display: flex;
@@ -911,9 +902,20 @@ main .carrito .total-price .pay-button-container {
   width: 100%;
   margin-top: 40px;
 }
-main .carrito .total-price .pay-button-container:hover {
+main .carrito .total-price .pay-button-container .back-button {
+  transition: transform 3s ease;
+}
+main .carrito .total-price .pay-button-container .back-button a img {
+  width: 60px;
+  height: 60px;
+}
+main .carrito .total-price .pay-button-container .back-button:hover {
+  transform: rotate(360deg);
+}
+main .carrito .total-price .pay-button-container .pay-button:hover {
   transform: scale(1.1);
 }
+
 /*-------------- ESTILOS DE TABLET ------------------*/
 /*-------------- ESTILOS DE TABLET ------------------*/
 @media screen and (max-width: 1024px) {
@@ -937,7 +939,7 @@ main .carrito .total-price .pay-button-container:hover {
   }
   /* BASE - Main */
   .main-container-index .section-1-main .section-1-top p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a,
   .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a {
@@ -969,6 +971,9 @@ main .carrito .total-price .pay-button-container:hover {
   }
   /* -------SOBRE NOSOTROS-------- */
   /* -------SOBRE NOSOTROS-------- */
+  main .sobre-nosotros {
+    width: 80%;
+  }
   main .sobre-nosotros .sobre-nosotros-top {
     position: relative;
   }
@@ -976,12 +981,9 @@ main .carrito .total-price .pay-button-container:hover {
     position: absolute;
     width: 100%;
     z-index: 1;
-    font-family: "Roboto", sans-serif;
     background-color: rgba(145, 118, 118, 0.5);
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
     top: 20px;
-    text-align: center;
-    padding: 0 30px;
   }
   main .sobre-nosotros .sobre-nosotros-top img {
     width: 100%;
@@ -1018,13 +1020,14 @@ main .carrito .total-price .pay-button-container:hover {
   .fixed-menu {
     display: flex;
   }
-  header .header-logo-container a {
+  header .header-logo-container .logo-header {
     justify-content: center;
   }
-  header .header-logo-container a img {
+  header .header-logo-container .logo-header img {
     display: none;
   }
-  header .header-logo-container .nav-buttons .cart-button button, header .header-logo-container .nav-buttons .account-button button {
+  header .header-logo-container .nav-buttons .cart-button a img,
+  header .header-logo-container .nav-buttons .account-button a img {
     width: 50px;
     height: 50px;
   }
@@ -1204,10 +1207,11 @@ main .carrito .total-price .pay-button-container:hover {
     width: 90%;
   }
   main .sobre-nosotros .sobre-nosotros-top p {
-    font-size: 1.4rem;
-    padding: 0 30px;
+    font-size: 1.2rem;
     top: 0;
-    font-weight: 600;
+  }
+  main .sobre-nosotros .sobre-nosotros-top p span {
+    font-size: 1.6rem;
   }
   main .sobre-nosotros .sobre-nosotros-top img {
     display: none;
@@ -1243,14 +1247,14 @@ main .carrito .total-price .pay-button-container:hover {
     font-size: 2rem;
     padding: 0;
   }
-  main .carrito table tr .cart-info div h3 {
-    font-size: 2.2rem;
+  main .carrito .first-table tr td .cart-info div h3 {
+    font-size: 2rem;
   }
-  main .carrito table tr .cart-info div p {
+  main .carrito .first-table tr td .cart-info div h3 {
     font-size: 2rem;
   }
   main .carrito table tr td .cart-info div p {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   main .carrito table tr td input {
     width: 40px;

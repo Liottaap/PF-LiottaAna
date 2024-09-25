@@ -91,12 +91,25 @@ main {
                 width: 100%;
                 margin-top: 40px;
 
-                &:hover{
-                        transform: scale(1.1);
+                .back-button{
+                    transition: transform 3s ease;
+                    a{
+                        img{
+                            width: 60px;
+                            height: 60px;
+                        }
                     }
+                    &:hover{
+                        transform: rotate(360deg);
+                    }
+                }
                 .pay-button{
                     @extend %estilos-botones;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                 }
+                
 
             }
         }

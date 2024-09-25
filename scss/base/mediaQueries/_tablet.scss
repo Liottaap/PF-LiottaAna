@@ -23,7 +23,7 @@
     }
     /* BASE - Main */
     .main-container-index .section-1-main .section-1-top p{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     .main-container-index .section-1-main .section-1-bottom .section-1-bottom-right a,
     .main-container-index .section-1-main .section-1-bottom .section-1-bottom-left a{
@@ -59,6 +59,9 @@
 
     /* -------SOBRE NOSOTROS-------- */
     /* -------SOBRE NOSOTROS-------- */
+    main .sobre-nosotros{
+        width: 80%;
+    }
     main .sobre-nosotros .sobre-nosotros-top{
         position: relative;
     }
@@ -66,12 +69,9 @@
         position: absolute;
         width: 100%;
         z-index: 1;
-        font-family: "Roboto", sans-serif;
         background-color: rgb(145 118 118 / 50%);
         text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
         top: 20px;
-        text-align: center;
-        padding: 0 30px;
     }
     main .sobre-nosotros .sobre-nosotros-top img{
         width: 100%;
