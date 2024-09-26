@@ -10,7 +10,7 @@ main .carrito .total-price .pay-button-container .pay-button, .main-container-in
   background-color: transparent;
   border-radius: 10px;
   box-shadow: 5px 5px 4px #4e7748;
-  border: 4px solid #4e7748;
+  border: 4px solid #52784f;
 }
 main .carrito .total-price .pay-button-container .pay-button a, .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button a {
   font-size: 2.5rem;
@@ -76,7 +76,7 @@ header ol, ul {
   width: 100%;
   height: 8vh;
   border-top: 3px solid #ddb3a1;
-  background-color: #4e7748;
+  background-color: #52784f;
   z-index: 10;
   display: none;
 }
@@ -96,7 +96,7 @@ header .header-logo-container {
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: 1fr;
-  background-color: #4e7748;
+  background-color: #52784f;
 }
 header .header-logo-container .logo-header {
   display: flex;
@@ -178,7 +178,7 @@ header .header-logo-container .nav-buttons .account-button a:hover {
   transform: scale(1.1);
 }
 header .color-nav {
-  background-color: #4e7748;
+  background-color: #52784f;
 }
 header .color-nav div button {
   border: 2px solid #EDE1D2;
@@ -348,7 +348,7 @@ header .color-nav div div .modifier-list li ul :hover {
 .main-container-index .section-2-main .section-2-main-ul-container ul li {
   padding: 15px 30px;
   border-radius: 10px;
-  background-color: #4e7748;
+  background-color: #52784f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,7 +383,7 @@ header .color-nav div div .modifier-list li ul :hover {
   height: 10px;
 }
 .main-container-index .section-2-main .section-2-main-cards-container .nuevo-container::-webkit-scrollbar-thumb, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container::-webkit-scrollbar-thumb, .main-container-index .section-2-main .section-2-main-cards-container .promos-container::-webkit-scrollbar-thumb {
-  background-color: #4e7748;
+  background-color: #52784f;
   border-radius: 10px;
 }
 .main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main, .main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main {
@@ -400,8 +400,8 @@ header .color-nav div div .modifier-list li ul :hover {
   border: 3px solid #5D2510;
 }
 .main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main:nth-child(2n+1), .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main:nth-child(2n+1), .main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main:nth-child(2n+1) {
-  background-color: #4e7748;
-  border: 3px solid #4e7748;
+  background-color: #52784f;
+  border: 3px solid #52784f;
 }
 .main-container-index .section-2-main .section-2-main-cards-container .nuevo-container .card-main:hover, .main-container-index .section-2-main .section-2-main-cards-container .destacados-container .card-main:hover, .main-container-index .section-2-main .section-2-main-cards-container .promos-container .card-main:hover {
   cursor: pointer;
@@ -548,7 +548,7 @@ main .categories-container ul {
 main .categories-container ul li {
   padding: 15px;
   border-right: 3px solid white;
-  background-color: #4e7748;
+  background-color: #52784f;
 }
 main .categories-container ul li:hover {
   transform: scale(1.1);
@@ -593,7 +593,7 @@ main .products-container .products-list .product-main {
   padding: 2px;
   border-radius: 20px;
   text-align: center;
-  border: 3px solid #4e7748;
+  border: 3px solid #52784f;
   background-color: #4e7748;
 }
 main .products-container .products-list .product-main div img {
@@ -822,7 +822,7 @@ main .carrito .first-table tr th {
   font-weight: 500;
   text-align: left;
   padding: 5px;
-  background-color: #4e7748;
+  background-color: #52784f;
 }
 main .carrito .first-table tr th:first-child {
   padding-left: 3rem;
@@ -875,7 +875,7 @@ main .carrito .total-price {
   flex-direction: column;
   width: 40%;
   margin-left: 60%;
-  border-top: 3px solid #4e7748;
+  border-top: 3px solid #52784f;
 }
 main .carrito .total-price table {
   width: 100%;
@@ -1274,7 +1274,7 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
     width: 100%;
     margin: 0;
     justify-content: center;
-    border-top: 3px solid #4e7748;
+    border-top: 3px solid #52784f;
   }
 }
 
