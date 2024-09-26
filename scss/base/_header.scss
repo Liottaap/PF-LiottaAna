@@ -7,9 +7,9 @@ header {
             @include flex(flex-start,center,row);
             font-family: "Playpen Sans", cursive;
             font-weight: 600;
-            background: -webkit-linear-gradient(90deg, #4e7748 10%, #c7965c 90%);
-            img {
-                width: 150px;
+/*             background: -webkit-linear-gradient(90deg, #4e7748 10%, #c7965c 90%);
+ */            img {
+                    width: 70%;
             }
             p {
                 @include font(#fff2eb,5rem,500);
