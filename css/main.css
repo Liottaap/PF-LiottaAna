@@ -94,7 +94,7 @@ header {
 }
 header .header-logo-container {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 70%;
   grid-template-rows: 1fr;
   background-color: #52784f;
 }
@@ -105,11 +105,15 @@ header .header-logo-container .logo-header {
   flex-direction: row;
   font-family: "Playpen Sans", cursive;
   font-weight: 600;
+  width: 100%;
   /*             background: -webkit-linear-gradient(90deg, #4e7748 10%, #c7965c 90%);
    */
 }
-header .header-logo-container .logo-header img {
-  width: 70%;
+header .header-logo-container .logo-header .logo_vDesktop {
+  width: 100%;
+}
+header .header-logo-container .logo-header .logo_vMobile {
+  display: none;
 }
 header .header-logo-container .logo-header p {
   color: #fff2eb;
@@ -1022,9 +1026,15 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
   }
   header .header-logo-container .logo-header {
     justify-content: center;
+    border-right: #412f26;
   }
-  header .header-logo-container .logo-header img {
+  header .header-logo-container .logo-header .logo_vDesktop {
     display: none;
+  }
+  header .header-logo-container .logo-header .logo_vMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   header .header-logo-container .nav-buttons .cart-button a img,
   header .header-logo-container .nav-buttons .account-button a img {

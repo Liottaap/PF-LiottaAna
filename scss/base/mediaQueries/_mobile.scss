@@ -9,10 +9,16 @@
     }
     header .header-logo-container .logo-header{
         justify-content: center;
+        border-right: $dark-letter;
     }
-    header .header-logo-container .logo-header img {
+     header .header-logo-container .logo-header .logo_vDesktop {
         display: none;
     }
+    header .header-logo-container .logo-header .logo_vMobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
 
     header .header-logo-container .nav-buttons .cart-button a img,
     header .header-logo-container .nav-buttons .account-button a img{
