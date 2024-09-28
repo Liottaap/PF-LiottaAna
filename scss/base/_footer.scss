@@ -1,7 +1,6 @@
 /*------------ ESTILOS DE FOOTER -------------*/
 
 footer {
-
     background-color: $dark-letter;
     @include grid(repeat(3,1fr),1fr);
 
@@ -20,23 +19,24 @@ footer {
                 padding-right: 5px;
             }
         }
-        }
         p{
             color: $light-letter-color;
             font-size: 1.4rem;
         }
     }
+
     .footer-container-contacto{
         @include flex(flex-start, center, column);
         text-align: center;
         height: 100%;
         padding-top: 10%;
-        h3{
+        h2{
             color: $light-letter-color;
             font-size: 2.2rem;
             border-bottom: 1px solid $light-letter-color;
         }
         p{
+
             color: $light-letter-color;
             font-size: 1.6rem;
         }
@@ -46,7 +46,7 @@ footer {
         text-align: center;
         height: 100%;
         padding-top: 10%;
-        h3{
+        h2{
             color: $light-letter-color;
             font-size: 2.2rem;
             border-bottom: 1px solid $light-letter-color;
@@ -66,3 +66,4 @@ footer {
         }
     }
 
+}
