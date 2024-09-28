@@ -11,7 +11,7 @@
         justify-content: center;
         border-right: $dark-letter;
     }
-     header .header-logo-container .logo-header .logo_vDesktop {
+    header .header-logo-container .logo-header .logo_vDesktop {
         display: none;
     }
     header .header-logo-container .logo-header .logo_vMobile{
@@ -168,7 +168,26 @@
     }
     main .categories-container ul li a{
         font-size: 1.4rem;
-    }   
+    }
+/* 
+    main .products-container .products-list .product-main {
+
+    }
+    main .products-container .products-list .product-main {
+        flex-direction: row;
+        width: 80%;
+        height: 20vh;
+        gap:10px;
+    }
+    main .products-container .products-list .product-main div img {
+        width: 100px;
+        height: 95%;
+        border-radius: 20px;
+
+    } */
+    main .products-container .products-list .product-main .product-main-texto h2 {
+        font-size: 1.6rem;
+    }
 
     /* ---------CONTACTO ----------*/
     /* ---------CONTACTO ----------*/
@@ -187,11 +206,11 @@
     }
     main .contacto-container .contacto-container--text h2,
     main .contacto-container .contacto-container--tel h2{
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     main .contacto-container  p,  .contacto-container--tel ul a {
         color: $secondary-color;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     main .ubicacion-container {
         display: flex;
@@ -263,11 +282,11 @@
         font-size: 2rem;
         padding: 0;
     }
-    main .carrito .first-table tr td .cart-info div h3 {
+    main .carrito .first-table tr td .cart-info div h2 {
         font-size: 2rem;
 
     }
-    main .carrito .first-table tr td .cart-info div h3{
+    main .carrito .first-table tr td .cart-info div h2{
         font-size: 2rem;
     }
     main .carrito table tr td .cart-info div p{
