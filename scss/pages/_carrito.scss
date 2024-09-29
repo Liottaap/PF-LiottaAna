@@ -106,7 +106,8 @@ main {
                 .pay-button{
                     @extend %estilos-botones;
                     &:hover{
-                        transform: scale(1.1);
+                        transform: scale(1.05);
+                        transition-duration: 0.2s;
                     }
                 }
                 

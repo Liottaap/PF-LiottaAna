@@ -449,7 +449,8 @@ header .color-nav div div .modifier-list li ul :hover {
   margin: 0 auto;
 }
 .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition-duration: 0.2s;
 }
 .main-container-index .fixed-wsp-button a img {
   background-color: none;
@@ -927,7 +928,8 @@ main .carrito .total-price .pay-button-container .back-button:hover {
   transform: rotate(360deg);
 }
 main .carrito .total-price .pay-button-container .pay-button:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  transition-duration: 0.2s;
 }
 
 /*-------------- ESTILOS DE TABLET ------------------*/
