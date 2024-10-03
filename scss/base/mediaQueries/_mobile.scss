@@ -91,7 +91,8 @@
 
     /* VER-MAS BUTTON */
     .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button a{
-        font-size: 1.6rem
+        font-size: 1.6rem;
+        width: 40%;
     }
 
     /* ---FOOTER ---*/
@@ -166,22 +167,7 @@
     main .categories-container ul li a{
         font-size: 1.4rem;
     }
-/* 
-    main .products-container .products-list .product-main {
 
-    }
-    main .products-container .products-list .product-main {
-        flex-direction: row;
-        width: 80%;
-        height: 20vh;
-        gap:10px;
-    }
-    main .products-container .products-list .product-main div img {
-        width: 100px;
-        height: 95%;
-        border-radius: 20px;
-
-    } */
     main .products-container .products-list .product-main .product-main-texto h2 {
         font-size: 1.6rem;
     }
@@ -310,5 +296,12 @@
         margin: 0;
         justify-content: center;
         border-top: 3px solid $primary-color;
+    }
+    main .carrito .total-price .pay-button-container .pay-button a, .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button{
+        width: 50%;
+    }
+    main .carrito .total-price .pay-button-container .pay-button a, .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button a{
+        font-size: 1.8rem;
+        width: 100%;
     }
 }

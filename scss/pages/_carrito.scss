@@ -60,9 +60,7 @@ main {
                         text-align: right;
                         color: #1e1b1b;
                     }
-                    
                 }
-
             }
         }
 
@@ -81,7 +79,6 @@ main {
                         padding: 10px;
                         font-size: 2.2rem;
                         font-weight: 500;
-
                     }
 
                 }
@@ -90,6 +87,9 @@ main {
                 @include flex(center,center,row);
                 width: 100%;
                 margin-top: 40px;
+                a{
+                    font-size: 2rem;
+                }
 
                 .back-button{
                     transition: transform 3s ease;
@@ -111,9 +111,6 @@ main {
                     &:hover{
                         background-color: #43a047;
                         border: none;
-
-/*                         transform: scale(1.05);
-                        transition-duration: 0.2s; */
                     }
                 }
                 

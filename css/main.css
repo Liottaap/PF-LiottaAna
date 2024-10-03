@@ -939,6 +939,9 @@ main .carrito .total-price .pay-button-container {
   width: 100%;
   margin-top: 40px;
 }
+main .carrito .total-price .pay-button-container a {
+  font-size: 2rem;
+}
 main .carrito .total-price .pay-button-container .back-button {
   transition: transform 3s ease;
 }
@@ -955,8 +958,6 @@ main .carrito .total-price .pay-button-container .pay-button:hover a {
 main .carrito .total-price .pay-button-container .pay-button:hover {
   background-color: #43a047;
   border: none;
-  /*                         transform: scale(1.05);
-                          transition-duration: 0.2s; */
 }
 
 /*-------------- ESTILOS DE TABLET ------------------*/
@@ -1149,6 +1150,7 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
   /* VER-MAS BUTTON */
   .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button a {
     font-size: 1.6rem;
+    width: 40%;
   }
   /* ---FOOTER ---*/
   /* ---FOOTER ---*/
@@ -1216,22 +1218,6 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
   main .categories-container ul li a {
     font-size: 1.4rem;
   }
-  /* 
-      main .products-container .products-list .product-main {
-
-      }
-      main .products-container .products-list .product-main {
-          flex-direction: row;
-          width: 80%;
-          height: 20vh;
-          gap:10px;
-      }
-      main .products-container .products-list .product-main div img {
-          width: 100px;
-          height: 95%;
-          border-radius: 20px;
-
-      } */
   main .products-container .products-list .product-main .product-main-texto h2 {
     font-size: 1.6rem;
   }
@@ -1353,6 +1339,13 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
     margin: 0;
     justify-content: center;
     border-top: 3px solid #52784f;
+  }
+  main .carrito .total-price .pay-button-container .pay-button a, .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button {
+    width: 50%;
+  }
+  main .carrito .total-price .pay-button-container .pay-button a, .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button a {
+    font-size: 1.8rem;
+    width: 100%;
   }
 }
 
