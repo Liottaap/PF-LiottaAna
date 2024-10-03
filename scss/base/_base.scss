@@ -11,26 +11,28 @@
         text-align: center;
         object-fit: cover;
         .section-1-top {
+            @include flex(center,center,row);
             grid-column: 1 / 3;
             grid-row: 1 / 2;
-            border: 3px solid $secondary-color;
-            background-color: $backg-green;;
-            @include flex(center,center,row);
+            box-shadow: 5px 5px 10px $secondary-color;
+            background-color: $secondary-color;
+            border-radius: 20px 20px 0 0;
             p {
                 width: 50%;
                 justify-self: flex-start;
-                @include font($dark-letter,1.8rem,500);
+                @include font($light-letter-color,1.8rem,500);
                 padding: 0 20px;
                 span{
                     font-size: 2.8rem;
                     font-family: "Playpen Sans", cursive;
-                    color:#34722b;
+                    color:#13a10e;
                 }
             }
             img{
                 justify-self: flex-end;
                 @include size(50%, 100%);
                 object-fit: cover;
+                border-radius: 0 20px 0 0;
             }
         }
         
@@ -84,19 +86,19 @@
             grid-row: 1 / 2;
             ul {
                 display: flex;
-                gap: 10px;    
+                gap: 15px;    
                 padding: 0;
                 height: 55px;
                 @include flex(center,center,row);
                 margin: 0 auto;
                 li {
-                    padding: 15px 30px;
+                    padding: 10px 20px;
                     border-radius: 10px;
                     background-color: $primary-color;
 
                     @include flex(center,center,row);
                     &:hover {
-                    transform: scaley(1.1);
+                    transition-duration: 0.2s;
                     background-color: $secondary-color;
                     }
                     a {
@@ -189,9 +191,12 @@
                 text-align: center;
                 grid-row: 3 / 4;
                 margin: 0 auto;
+                &:hover a{
+                    color: whitesmoke;
+                }
                 &:hover {
-                    transform: scale(1.05);
-                    transition-duration: 0.2s;
+                    background-color: #43a047;
+                    border: none;
                 }
                 
 
@@ -204,7 +209,7 @@
         a {
             img {
                 background-color: none;
-                width: 100px;
+                width: 50px;
             }
         }
     }

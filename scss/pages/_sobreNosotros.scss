@@ -5,9 +5,10 @@ main{
     .sobre-nosotros{
         @include size(70%,100%);
         @include grid(1fr,400px 100px);
-        background-color: $backg-green;
+        background-color: $secondary-color;
         box-shadow: 5px 5px 10px $secondary-color;
-        border: 5px solid $secondary-color;
+        border-radius: 20px 20px 0 0;
+        gap: 2px;
         margin: 0 auto;
         text-align: center;
 
@@ -17,15 +18,15 @@ main{
             border-bottom: none;
             color:$dark-letter;
             p{
-                @include font($dark-letter,1.6rem,500);
+                @include font($light-letter-color,1.6rem,500);
                 width: 50%;
                 padding: 0 30px;
                 text-align: center;
 
                 span{
                     font-family: "Playpen Sans", cursive;
-                    @include font(#34722b,1.8rem,500);
-                    &:nth-child(1){
+                    @include font(#13a10e,1.8rem,500);
+                    &:nth-child(1){ 
                         font-size: 3rem;
                     }
                 }
@@ -33,13 +34,13 @@ main{
             img{
                 @include size(50%,100%);
                 object-fit: cover;
+                border-radius: 0 20px 0 0;
 
             }
         }
         .sobre-nosotros-bottom{
             grid-row: 2 / 3;
             @include flex(space-between,center,row);
-            border: 3px dotted $secondary-color;
             img{
                 @include size(100%,100%);
                 border-right: 3px dotted $secondary-color;

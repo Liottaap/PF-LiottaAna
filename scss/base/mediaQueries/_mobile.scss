@@ -20,12 +20,6 @@
         align-items: center;
     } 
 
-    header .header-logo-container .nav-buttons .cart-button a img,
-    header .header-logo-container .nav-buttons .account-button a img{
-        width: 50px;
-        height: 50px;
-    }
-
     /* bootstrap */
     header .color-nav div form .width-input {
         width: 50vw
@@ -79,11 +73,14 @@
     .main-container-index .section-2-main .section-2-main-ul-container ul {
         gap: 2px;
     }
+    
     .main-container-index .section-2-main .section-2-main-ul-container ul li {
         font-size: 1.4rem;
         padding:5px;
     }
-
+    .main-container-index .section-2-main .section-2-main-ul-container ul li a {
+        font-size: 2rem;
+    }
 
 
     .card-main{ 
@@ -94,7 +91,7 @@
 
     /* VER-MAS BUTTON */
     .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button a{
-        font-size: 1.8rem
+        font-size: 1.6rem
     }
 
     /* ---FOOTER ---*/
@@ -230,7 +227,7 @@
     }
     main .fixed-wsp-button a img,
     .main-container-index .fixed-wsp-button a img{
-        width: 60px;
+        width: 40px;
     }
 
     /* ---------SOBRE NOSOTROS ----------*/
@@ -242,7 +239,7 @@
     }
     main .sobre-nosotros .sobre-nosotros-top p{
         font-size: 1.2rem;
-        top:0;
+        top:15px;
     }
     main .sobre-nosotros .sobre-nosotros-top p span{
         font-size: 1.6rem;
@@ -253,6 +250,9 @@
     main .sobre-nosotros .sobre-nosotros-bottom img:nth-child(3){
         position: relative;
         border-right: none;
+    }
+    main .sobre-nosotros .sobre-nosotros-bottom img {
+        border-radius: 20px 20px 0 0;
     }
     main .sobre-nosotros .sobre-nosotros-bottom img:nth-child(even),
     main .sobre-nosotros .sobre-nosotros-bottom img:nth-child(1),

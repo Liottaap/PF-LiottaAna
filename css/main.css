@@ -9,7 +9,7 @@ main .carrito .total-price .pay-button-container .pay-button, .main-container-in
   height: 50px;
   background-color: transparent;
   border-radius: 10px;
-  box-shadow: 5px 5px 4px #4e7748;
+  /*     box-shadow: 5px 5px 4px #4e7748; */
   border: 4px solid #52784f;
 }
 main .carrito .total-price .pay-button-container .pay-button a, .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button a {
@@ -32,7 +32,7 @@ main .fixed-wsp-button, main .fixed-cart-button, .main-container-index .fixed-ws
 }
 
 body {
-  background-color: #EDE1D2;
+  background-color: #cdcdcd;
   font-family: "Roboto", sans-serif;
 }
 
@@ -75,7 +75,7 @@ header ol, ul {
   bottom: 0;
   width: 100%;
   height: 8vh;
-  border-top: 3px solid #ddb3a1;
+  border-top: 3px solid #cdcdcd;
   background-color: #52784f;
   z-index: 10;
   display: none;
@@ -108,7 +108,7 @@ header .header-logo-container .logo-header {
   width: 100%;
 }
 header .header-logo-container .logo-header .logo_vDesktop {
-  width: 85%;
+  width: 70%;
 }
 header .header-logo-container .logo-header .logo_vMobile {
   display: none;
@@ -123,7 +123,7 @@ header .header-logo-container .nav-buttons {
   justify-content: flex-end;
   align-items: flex-start;
   flex-direction: row;
-  gap: 15px;
+  gap: 20px;
   margin-top: 20px;
   padding-right: 20px;
 }
@@ -132,32 +132,33 @@ header .header-logo-container .nav-buttons .cart-button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 5px;
 }
-header .header-logo-container .nav-buttons .cart-button a {
+header .header-logo-container .nav-buttons .cart-button .svg-carrito {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  width: 40px;
+  height: 40px;
   text-align: center;
-  gap: 5px;
+  background-color: #cdcdcd;
+  border-radius: 50%;
 }
-header .header-logo-container .nav-buttons .cart-button a img {
-  width: 60px;
-  height: 60px;
+header .header-logo-container .nav-buttons .cart-button .svg-carrito:hover {
+  background-color: #39ae41;
+  border: 2px solid #d7d9d8;
 }
-header .header-logo-container .nav-buttons .cart-button a img:hover {
-  transform: scale(1.1);
+header .header-logo-container .nav-buttons .cart-button .svg-carrito:hover svg g {
+  stroke: #d7d9d8;
 }
-header .header-logo-container .nav-buttons .cart-button a p {
-  font-size: 1.4rem;
+header .header-logo-container .nav-buttons .cart-button p {
+  color: #EDE1D2;
+  font-size: 1.3rem;
   font-weight: 400;
 }
-header .header-logo-container .nav-buttons .cart-button a {
-  color: whitesmoke;
-  font-size: 1.4rem;
-  font-weight: 400;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
+header .header-logo-container .nav-buttons .cart-button p:hover {
+  border-bottom: 1px solid #d7d9d8;
 }
 header .header-logo-container .nav-buttons .account-button {
   display: flex;
@@ -165,20 +166,34 @@ header .header-logo-container .nav-buttons .account-button {
   align-items: center;
   flex-direction: column;
   gap: 5px;
-}
-header .header-logo-container .nav-buttons .account-button a {
-  color: whitesmoke;
-  font-size: 1.4rem;
-  font-weight: 400;
   text-align: center;
-  font-family: "Roboto", sans-serif;
 }
-header .header-logo-container .nav-buttons .account-button a img {
-  width: 60px;
-  height: 60px;
+header .header-logo-container .nav-buttons .account-button .svg-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #cdcdcd;
+  border-radius: 50%;
 }
-header .header-logo-container .nav-buttons .account-button a:hover {
-  transform: scale(1.1);
+header .header-logo-container .nav-buttons .account-button .svg-account:hover {
+  /*                         border: 3px solid #39ae41; */
+  background-color: #39ae41;
+  border: 2px solid #d7d9d8;
+}
+header .header-logo-container .nav-buttons .account-button .svg-account:hover svg g {
+  stroke: #d7d9d8;
+}
+header .header-logo-container .nav-buttons .account-button ul li a {
+  color: #EDE1D2;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+header .header-logo-container .nav-buttons .account-button ul li a:hover {
+  border-bottom: 1px solid #d7d9d8;
 }
 header .color-nav {
   background-color: #52784f;
@@ -236,19 +251,20 @@ header .color-nav div div .modifier-list li ul :hover {
   object-fit: cover;
 }
 .main-container-index .section-1-main .section-1-top {
-  grid-column: 1/3;
-  grid-row: 1/2;
-  border: 3px solid #5D2510;
-  background-color: #e4eae3;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  box-shadow: 5px 5px 10px #5D2510;
+  background-color: #5D2510;
+  border-radius: 20px 20px 0 0;
 }
 .main-container-index .section-1-main .section-1-top p {
   width: 50%;
   justify-self: flex-start;
-  color: #412f26;
+  color: #CBB89D;
   font-size: 1.8rem;
   font-weight: 500;
   padding: 0 20px;
@@ -256,13 +272,14 @@ header .color-nav div div .modifier-list li ul :hover {
 .main-container-index .section-1-main .section-1-top p span {
   font-size: 2.8rem;
   font-family: "Playpen Sans", cursive;
-  color: #34722b;
+  color: #13a10e;
 }
 .main-container-index .section-1-main .section-1-top img {
   justify-self: flex-end;
   width: 50%;
   height: 100%;
   object-fit: cover;
+  border-radius: 0 20px 0 0;
 }
 .main-container-index .section-1-main .section-1-bottom {
   grid-column: 1/3;
@@ -339,7 +356,7 @@ header .color-nav div div .modifier-list li ul :hover {
 }
 .main-container-index .section-2-main .section-2-main-ul-container ul {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   padding: 0;
   height: 55px;
   display: flex;
@@ -349,7 +366,7 @@ header .color-nav div div .modifier-list li ul :hover {
   margin: 0 auto;
 }
 .main-container-index .section-2-main .section-2-main-ul-container ul li {
-  padding: 15px 30px;
+  padding: 10px 20px;
   border-radius: 10px;
   background-color: #52784f;
   display: flex;
@@ -358,7 +375,7 @@ header .color-nav div div .modifier-list li ul :hover {
   flex-direction: row;
 }
 .main-container-index .section-2-main .section-2-main-ul-container ul li:hover {
-  transform: scaley(1.1);
+  transition-duration: 0.2s;
   background-color: #5D2510;
 }
 .main-container-index .section-2-main .section-2-main-ul-container ul li a {
@@ -448,13 +465,16 @@ header .color-nav div div .modifier-list li ul :hover {
   grid-row: 3/4;
   margin: 0 auto;
 }
+.main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button:hover a {
+  color: whitesmoke;
+}
 .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button:hover {
-  transform: scale(1.05);
-  transition-duration: 0.2s;
+  background-color: #43a047;
+  border: none;
 }
 .main-container-index .fixed-wsp-button a img {
   background-color: none;
-  width: 100px;
+  width: 50px;
 }
 
 /*------------ ESTILOS DE FOOTER -------------*/
@@ -675,11 +695,10 @@ main .products-container .page-buttons ul li a {
 main .fixed-cart-button {
   border-radius: 50%;
   background-color: #69cf69;
-  border: 5px solid black;
-  box-shadow: 3px 8px 10px var(--dark-letter);
+  border: 3px solid black;
 }
 main .fixed-cart-button a img {
-  width: 100px;
+  width: 60px;
 }
 
 /*------------ ESTILOS DE CONTACTO -------------*/
@@ -689,12 +708,13 @@ main .contacto-container {
   height: 200px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: row;
+  padding-top: 30px;
   margin: 50px auto;
-  background-color: #e4eae3;
-  border: 3px solid #5D2510;
-  box-shadow: 5px 5px 10px #5D2510;
+  background-color: #5D2510;
+  /*         box-shadow: 5px 5px 10px $secondary-color; */
+  border-radius: 20px;
   text-align: center;
 }
 main .contacto-container .contacto-container--text, main .contacto-container .contacto-container--tel {
@@ -705,27 +725,28 @@ main .contacto-container .contacto-container--text, main .contacto-container .co
   width: 50%;
 }
 main .contacto-container .contacto-container--text h2, main .contacto-container .contacto-container--tel h2 {
-  color: #5D2510;
+  color: #CBB89D;
   font-size: 2.2rem;
   font-weight: 600;
-  color: #5D2510;
+  color: #CBB89D;
   font-size: 2.2rem;
+  border-bottom: 2px solid #CBB89D;
 }
 main .contacto-container .contacto-container--text p, main .contacto-container .contacto-container--tel p {
-  color: #5D2510;
+  color: #CBB89D;
   font-size: 1.8rem;
   font-weight: 500;
 }
 main .contacto-container .contacto-container--tel h2 {
-  color: #5D2510;
+  color: #CBB89D;
   font-size: 2.2rem;
   font-weight: 600;
 }
 main .contacto-container .contacto-container--tel ul li a {
-  color: #5D2510;
+  color: #CBB89D;
   font-size: 1.8rem;
   font-weight: 500;
-  color: #5D2510;
+  color: #CBB89D;
   font-size: 1.8rem;
 }
 main .contacto-container .contacto-container--tel ul li a img {
@@ -753,7 +774,7 @@ main .ubicacion-container iframe {
 }
 main .fixed-wsp-button a img {
   background-color: none;
-  width: 100px;
+  width: 50px;
 }
 
 /*------------ ESTILOS DE SOBRE NOSOTROS -------------*/
@@ -764,9 +785,10 @@ main .sobre-nosotros {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 400px 100px;
-  background-color: #e4eae3;
+  background-color: #5D2510;
   box-shadow: 5px 5px 10px #5D2510;
-  border: 5px solid #5D2510;
+  border-radius: 20px 20px 0 0;
+  gap: 2px;
   margin: 0 auto;
   text-align: center;
 }
@@ -780,7 +802,7 @@ main .sobre-nosotros .sobre-nosotros-top {
   color: #412f26;
 }
 main .sobre-nosotros .sobre-nosotros-top p {
-  color: #412f26;
+  color: #CBB89D;
   font-size: 1.6rem;
   font-weight: 500;
   width: 50%;
@@ -789,7 +811,7 @@ main .sobre-nosotros .sobre-nosotros-top p {
 }
 main .sobre-nosotros .sobre-nosotros-top p span {
   font-family: "Playpen Sans", cursive;
-  color: #34722b;
+  color: #13a10e;
   font-size: 1.8rem;
   font-weight: 500;
 }
@@ -800,6 +822,7 @@ main .sobre-nosotros .sobre-nosotros-top img {
   width: 50%;
   height: 100%;
   object-fit: cover;
+  border-radius: 0 20px 0 0;
 }
 main .sobre-nosotros .sobre-nosotros-bottom {
   grid-row: 2/3;
@@ -807,7 +830,6 @@ main .sobre-nosotros .sobre-nosotros-bottom {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  border: 3px dotted #5D2510;
 }
 main .sobre-nosotros .sobre-nosotros-bottom img {
   width: 100%;
@@ -927,9 +949,14 @@ main .carrito .total-price .pay-button-container .back-button a img {
 main .carrito .total-price .pay-button-container .back-button:hover {
   transform: rotate(360deg);
 }
+main .carrito .total-price .pay-button-container .pay-button:hover a {
+  color: whitesmoke;
+}
 main .carrito .total-price .pay-button-container .pay-button:hover {
-  transform: scale(1.05);
-  transition-duration: 0.2s;
+  background-color: #43a047;
+  border: none;
+  /*                         transform: scale(1.05);
+                          transition-duration: 0.2s; */
 }
 
 /*-------------- ESTILOS DE TABLET ------------------*/
@@ -946,6 +973,9 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
   .header-logo {
     flex-direction: column;
     text-align: center;
+  }
+  header .header-logo-container .logo-header .logo_vDesktop {
+    width: 100%;
   }
   .header-logo-container a img {
     width: 130px;
@@ -997,12 +1027,17 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
     position: absolute;
     width: 100%;
     z-index: 1;
+    color: #30241e;
     background-color: rgba(145, 118, 118, 0.5);
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
     top: 20px;
   }
+  main .sobre-nosotros .sobre-nosotros-top p span {
+    color: #166f0f;
+  }
   main .sobre-nosotros .sobre-nosotros-top img {
     width: 100%;
+    border-radius: 20px 20px 0 0;
   }
   main .sobre-nosotros .sobre-nosotros-bottom img:nth-child(5),
   main .sobre-nosotros .sobre-nosotros-bottom img:nth-child(6) {
@@ -1047,11 +1082,6 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  header .header-logo-container .nav-buttons .cart-button a img,
-  header .header-logo-container .nav-buttons .account-button a img {
-    width: 50px;
-    height: 50px;
   }
   /* bootstrap */
   header .color-nav div form .width-input {
@@ -1109,13 +1139,16 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
     font-size: 1.4rem;
     padding: 5px;
   }
+  .main-container-index .section-2-main .section-2-main-ul-container ul li a {
+    font-size: 2rem;
+  }
   .card-main {
     width: 100%;
     max-width: 200px;
   }
   /* VER-MAS BUTTON */
   .main-container-index .section-2-main .section-2-main-cards-container .ver-mas-button a {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   /* ---FOOTER ---*/
   /* ---FOOTER ---*/
@@ -1242,7 +1275,7 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
   }
   main .fixed-wsp-button a img,
   .main-container-index .fixed-wsp-button a img {
-    width: 60px;
+    width: 40px;
   }
   /* ---------SOBRE NOSOTROS ----------*/
   /* ---------SOBRE NOSOTROS ----------*/
@@ -1252,7 +1285,7 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
   }
   main .sobre-nosotros .sobre-nosotros-top p {
     font-size: 1.2rem;
-    top: 0;
+    top: 15px;
   }
   main .sobre-nosotros .sobre-nosotros-top p span {
     font-size: 1.6rem;
@@ -1263,6 +1296,9 @@ main .carrito .total-price .pay-button-container .pay-button:hover {
   main .sobre-nosotros .sobre-nosotros-bottom img:nth-child(3) {
     position: relative;
     border-right: none;
+  }
+  main .sobre-nosotros .sobre-nosotros-bottom img {
+    border-radius: 20px 20px 0 0;
   }
   main .sobre-nosotros .sobre-nosotros-bottom img:nth-child(even),
   main .sobre-nosotros .sobre-nosotros-bottom img:nth-child(1),

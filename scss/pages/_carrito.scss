@@ -105,15 +105,19 @@ main {
                 }
                 .pay-button{
                     @extend %estilos-botones;
+                    &:hover a {
+                            color: whitesmoke;
+                    }
                     &:hover{
-                        transform: scale(1.05);
-                        transition-duration: 0.2s;
+                        background-color: #43a047;
+                        border: none;
+
+/*                         transform: scale(1.05);
+                        transition-duration: 0.2s; */
                     }
                 }
                 
-
             }
         }
-
     }
 }

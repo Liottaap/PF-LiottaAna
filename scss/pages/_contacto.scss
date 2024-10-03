@@ -5,34 +5,36 @@
 main{
     .contacto-container{
         @include size(70%,200px);
-        @include flex(space-around,center,row);
+        @include flex(space-around,flex-start,row);
+        padding-top: 30px;
         margin: 50px auto;
-        background-color: $backg-green;
-        border: 3px solid $secondary-color;
-        box-shadow: 5px 5px 10px $secondary-color;
+        background-color: $secondary-color;
+/*         box-shadow: 5px 5px 10px $secondary-color; */
+        border-radius: 20px;
         text-align: center;
         .contacto-container--text{
             @include flex(center,center,column);
             width: 50%;
             h2{
-                @include font($secondary-color,2.2rem,600);
-                color: $secondary-color;
+                @include font($light-letter-color,2.2rem,600);
+                color: $light-letter-color;
                 font-size: 2.2rem;
+                border-bottom: 2px solid $light-letter-color;
             }
             p{
-                @include font($secondary-color,1.8rem,500);
+                @include font($light-letter-color,1.8rem,500);
             }
         }
         .contacto-container--tel{
             @extend .contacto-container--text;
             h2{
-                @include font($secondary-color,2.2rem,600);
+                @include font($light-letter-color,2.2rem,600);
             }
             ul{
                 li{
                     a{
-                        @include font($secondary-color,1.8rem,500);
-                        color: $secondary-color;
+                        @include font($light-letter-color,1.8rem,500);
+                        color: $light-letter-color;
                         font-size: 1.8rem;
                         img{
                             @include size(20px,20px);
@@ -62,7 +64,7 @@ main{
         a {
             img {
                 background-color: none;
-                width: 100px;
+                width: 50px;
             }
         }
     }

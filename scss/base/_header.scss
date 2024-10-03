@@ -9,7 +9,7 @@ header {
             font-weight: 600;
             width: 100%;
             .logo_vDesktop { 
-                width: 85%;
+                width: 70%;
             }
             .logo_vMobile{
                 display: none;
@@ -20,44 +20,60 @@ header {
         }
         .nav-buttons {
             @include flex(flex-end,flex-start,row);
-            gap: 15px;
+            gap: 20px;
             margin-top:20px;
             padding-right: 20px;
             .cart-button{
                 @include flex(center,center,column);
-                a{
-                    @include flex(center,center,column);
+                gap: 5px;
+                .svg-carrito{
+                    @include flex(center,center,row);
+                    @include size(40px,40px);
                     text-align: center;
-                    gap:5px;
-                    img{
-                        @include size(60px,60px);
-                        &:hover{
-                            transform: scale(1.1);
-                        }
+                    background-color: #cdcdcd;
+                    border-radius: 50%;
+                    &:hover{
+                        background-color: #39ae41;
+                        border: 2px solid #d7d9d8;
                     }
-                    p{
-                        font-size: 1.4rem;
-                        font-weight: 400;
+                    &:hover svg g {
+                        stroke: #d7d9d8;
                     }
                 }
-                a{
-                    @include font(whitesmoke,1.4rem,400);
-                    text-align: center;
-                    font-family: "Roboto", sans-serif;
+                p{
+                    @include font(#EDE1D2,1.3rem,400);
+                    &:hover{
+                        border-bottom: 1px solid #d7d9d8;
+                    }
                 }
             }
             .account-button{
                 @include flex(center,center,column);
                 gap: 5px;
-                a{
-                    @include font(whitesmoke,1.4rem,400);
+                text-align: center;
+                .svg-account{
+                    @include flex(center,center,row);
+                    @include size(40px,40px);
                     text-align: center;
-                    font-family: "Roboto", sans-serif;
-                    img{
-                        @include size(60px,60px);
-                    }
+                    background-color: #cdcdcd;
+                    border-radius: 50%;
                     &:hover{
-                        transform: scale(1.1);
+/*                         border: 3px solid #39ae41; */
+                        background-color: #39ae41;
+                        border: 2px solid #d7d9d8;
+                    }
+                    &:hover svg g {
+                        stroke: #d7d9d8;
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            @include font(#EDE1D2,1.3rem,400);
+                            &:hover{
+                                border-bottom: 1px solid #d7d9d8;
+                            }
+                        }
                     }
                 }
             }
